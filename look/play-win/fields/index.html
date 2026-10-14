@@ -1,0 +1,523 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="description" content="Every field and control in Play &amp; Win: options, defaults, limits, messages, and where each shows in the app."><script>(function(){var t;try{t=JSON.parse(localStorage.getItem("ab.theme"));}catch(e){}if(t!=="light"&&t!=="dark"){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;})();</script><link rel="icon" href="../../../assets/favicon.svg"><link rel="stylesheet" href="../../../assets/fonts.css"><link rel="stylesheet" href="../../../assets/site.css"><title>Play &amp; Win: field reference | appbuilder</title></head><body class="doc-page" data-page="look/play-win/fields" data-root="../../../"><a class="skip" href="#main">Skip to content</a><header class="topbar"><a class="brand" href="../../../index.html" aria-label="appbuilder home"><span class="logo"><svg width="142" height="48" viewBox="0 0 142 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M63.9588 0.00012207H49.864V18.9085C49.864 24.0756 54.0527 28.2643 59.2198 28.2643H77.2219V18.4091H82.8423C86.0634 18.4091 88.1625 17.6075 90.0354 15.9939C91.9237 14.367 92.8541 11.8208 92.8541 9.20461C92.8541 6.58753 91.9232 4.08429 90.0361 2.45803C88.1635 0.816192 86.064 0.00012207 82.8423 0.00012207H71.5734V23.1219H59.8349C57.445 23.1219 55.5077 21.1845 55.5077 18.7946V16.5139H68.4243L67.0709 11.5821H55.5077V5.14251L65.324 5.14251L63.9588 0.00012207ZM86.9465 9.20461C86.9465 10.3694 86.5332 11.3985 85.7176 12.1382C84.9004 12.8794 83.656 13.3509 81.9578 13.3509H77.2219V5.05828H81.9578C83.656 5.05828 84.9004 5.52981 85.7176 6.271C86.5332 7.01073 86.9465 8.03977 86.9465 9.20461Z" fill="#03A7FF"/>
+<path d="M9.18131 45.8031V47.8142H0.796875V36.9856H8.98021V38.9966H3.28746V41.3479H8.31503V43.2971H3.28746V45.8031H9.18131Z" fill="#03A7FF"/>
+<path d="M18.7521 47.8142L16.1377 44.0551L13.5698 47.8142H10.6925L14.6991 42.307L10.8936 36.9856H13.74L16.2305 40.4971L18.6747 36.9856H21.3819L17.6073 42.2142L21.6449 47.8142H18.7521Z" fill="#03A7FF"/>
+<path d="M28.1734 36.9856C29.1325 36.9856 29.9627 37.1454 30.664 37.4651C31.3756 37.7848 31.9222 38.2386 32.3038 38.8264C32.6854 39.4143 32.8762 40.1104 32.8762 40.9148C32.8762 41.7089 32.6854 42.405 32.3038 43.0032C31.9222 43.591 31.3756 44.0448 30.664 44.3645C29.9627 44.6739 29.1325 44.8286 28.1734 44.8286H25.9923V47.8142H23.4862V36.9856H28.1734ZM28.0342 42.7866C28.7871 42.7866 29.3594 42.6268 29.7513 42.307C30.1432 41.977 30.3392 41.513 30.3392 40.9148C30.3392 40.3063 30.1432 39.8423 29.7513 39.5225C29.3594 39.1925 28.7871 39.0275 28.0342 39.0275H25.9923V42.7866H28.0342Z" fill="#03A7FF"/>
+<path d="M40.6793 47.9998C39.5552 47.9998 38.5393 47.7575 37.6318 47.2727C36.7346 46.788 36.0281 46.1228 35.5125 45.2772C35.0072 44.4212 34.7545 43.4621 34.7545 42.3999C34.7545 41.3376 35.0072 40.3837 35.5125 39.538C36.0281 38.682 36.7346 38.0117 37.6318 37.527C38.5393 37.0423 39.5552 36.7999 40.6793 36.7999C41.8034 36.7999 42.8141 37.0423 43.7113 37.527C44.6085 38.0117 45.315 38.682 45.8306 39.538C46.3463 40.3837 46.6041 41.3376 46.6041 42.3999C46.6041 43.4621 46.3463 44.4212 45.8306 45.2772C45.315 46.1228 44.6085 46.788 43.7113 47.2727C42.8141 47.7575 41.8034 47.9998 40.6793 47.9998ZM40.6793 45.865C41.3187 45.865 41.8962 45.7206 42.4119 45.4319C42.9275 45.1328 43.3297 44.7203 43.6185 44.1943C43.9176 43.6684 44.0671 43.0702 44.0671 42.3999C44.0671 41.7295 43.9176 41.1314 43.6185 40.6054C43.3297 40.0794 42.9275 39.6721 42.4119 39.3833C41.8962 39.0842 41.3187 38.9347 40.6793 38.9347C40.0399 38.9347 39.4624 39.0842 38.9467 39.3833C38.4311 39.6721 38.0237 40.0794 37.7246 40.6054C37.4359 41.1314 37.2915 41.7295 37.2915 42.3999C37.2915 43.0702 37.4359 43.6684 37.7246 44.1943C38.0237 44.7203 38.4311 45.1328 38.9467 45.4319C39.4624 45.7206 40.0399 45.865 40.6793 45.865Z" fill="#03A7FF"/>
+<path d="M53.7935 36.9856C54.7526 36.9856 55.5828 37.1454 56.2841 37.4651C56.9957 37.7848 57.5423 38.2386 57.9238 38.8264C58.3054 39.4143 58.4962 40.1104 58.4962 40.9148C58.4962 41.7089 58.3054 42.405 57.9238 43.0032C57.5423 43.591 56.9957 44.0448 56.2841 44.3645C55.5828 44.6739 54.7526 44.8286 53.7935 44.8286H51.6123V47.8142H49.1063V36.9856H53.7935ZM53.6543 42.7866C54.4071 42.7866 54.9795 42.6268 55.3714 42.307C55.7633 41.977 55.9592 41.513 55.9592 40.9148C55.9592 40.3063 55.7633 39.8423 55.3714 39.5225C54.9795 39.1925 54.4071 39.0275 53.6543 39.0275H51.6123V42.7866H53.6543Z" fill="#03A7FF"/>
+<path d="M60.9041 36.9856H63.4102V45.7722H68.84V47.8142H60.9041V36.9856Z" fill="#03A7FF"/>
+<path d="M78.5644 45.4938H73.5369L72.5778 47.8142H70.0098L74.8363 36.9856H77.3114L82.1533 47.8142H79.5235L78.5644 45.4938ZM77.7755 43.591L76.0584 39.4452L74.3413 43.591H77.7755Z" fill="#03A7FF"/>
+<path d="M85.3531 39.0275H81.888V36.9856H91.3243V39.0275H87.8592V47.8142H85.3531V39.0275Z" fill="#03A7FF"/>
+<path d="M96.0392 38.9966V41.8584H101.051V43.8695H96.0392V47.8142H93.5332V36.9856H101.717V38.9966H96.0392Z" fill="#03A7FF"/>
+<path d="M109.17 47.9998C108.046 47.9998 107.03 47.7575 106.123 47.2727C105.226 46.788 104.519 46.1228 104.003 45.2772C103.498 44.4212 103.245 43.4621 103.245 42.3999C103.245 41.3376 103.498 40.3837 104.003 39.538C104.519 38.682 105.226 38.0117 106.123 37.527C107.03 37.0423 108.046 36.7999 109.17 36.7999C110.294 36.7999 111.305 37.0423 112.202 37.527C113.099 38.0117 113.806 38.682 114.322 39.538C114.837 40.3837 115.095 41.3376 115.095 42.3999C115.095 43.4621 114.837 44.4212 114.322 45.2772C113.806 46.1228 113.099 46.788 112.202 47.2727C111.305 47.7575 110.294 47.9998 109.17 47.9998ZM109.17 45.865C109.81 45.865 110.387 45.7206 110.903 45.4319C111.418 45.1328 111.821 44.7203 112.109 44.1943C112.409 43.6684 112.558 43.0702 112.558 42.3999C112.558 41.7295 112.409 41.1314 112.109 40.6054C111.821 40.0794 111.418 39.6721 110.903 39.3833C110.387 39.0842 109.81 38.9347 109.17 38.9347C108.531 38.9347 107.953 39.0842 107.438 39.3833C106.922 39.6721 106.515 40.0794 106.216 40.6054C105.927 41.1314 105.782 41.7295 105.782 42.3999C105.782 43.0702 105.927 43.6684 106.216 44.1943C106.515 44.7203 106.922 45.1328 107.438 45.4319C107.953 45.7206 108.531 45.865 109.17 45.865Z" fill="#03A7FF"/>
+<path d="M124.497 47.8142L122.408 44.7976H120.103V47.8142H117.597V36.9856H122.284C123.244 36.9856 124.074 37.1454 124.775 37.4651C125.487 37.7848 126.033 38.2386 126.415 38.8264C126.796 39.4143 126.987 40.1104 126.987 40.9148C126.987 41.7192 126.791 42.4153 126.399 43.0032C126.018 43.5807 125.471 44.0242 124.76 44.3335L127.188 47.8142H124.497ZM124.45 40.9148C124.45 40.3063 124.254 39.8423 123.862 39.5225C123.47 39.1925 122.898 39.0275 122.145 39.0275H120.103V42.8021H122.145C122.898 42.8021 123.47 42.6371 123.862 42.307C124.254 41.977 124.45 41.513 124.45 40.9148Z" fill="#03A7FF"/>
+<path d="M139.446 47.8142L139.43 41.317L136.243 46.6694H135.114L131.943 41.4562V47.8142H129.591V36.9856H131.664L135.717 43.7148L139.708 36.9856H141.766L141.797 47.8142H139.446Z" fill="#03A7FF"/>
+</svg>
+</span><span class="divider"></span><span class="product">appbuilder</span></a><nav class="tabs" aria-label="Guide"><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-start">Get started<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega wide" id="menu-start" role="menu"><a href="../../../start/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+</svg></span><span><span class="t">Get started: overview</span></span></a><a href="../../../start/open/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Open App Studio</span></span></a><a href="../../../start/your-apps/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Your apps</span></span></a><a href="../../../start/new-app/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Add a new app</span></span></a><a href="../../../start/overview/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Your app&#39;s Overview</span></span></a><a href="../../../start/find-your-way/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Find your way around</span></span></a><a href="../../../start/guide/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">App Studio&#39;s built-in Guide</span></span></a><a href="../../../start/changes-reach-the-app/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">When your changes reach the app</span></span></a><a href="../../../start/goals/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Start with a goal</span></span></a></div></div><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-build">Build your app<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega" id="menu-build" role="menu"><a href="../../../build/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+  <path d="M12 18h.01" />
+</svg></span><span><span class="t">Build your app: overview</span></span></a><a href="../../../build/app-identity/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+  <path d="M12 18h.01" />
+</svg></span><span><span class="t">Name, icon &amp; splash</span></span></a><a href="../../../build/app-general/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M8 2v3" />
+  <path d="M16 2v3" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+  <path d="M3 9h18" />
+  <path d="M8 13h.01" />
+  <path d="M12 13h.01" />
+  <path d="M16 13h.01" />
+  <path d="M8 17h.01" />
+  <path d="M12 17h.01" />
+  <path d="M16 17h.01" />
+</svg></span><span><span class="t">Events &amp; updates</span></span></a><a href="../../../build/app-sign-in/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m10 17 5-5-5-5" />
+  <path d="M15 12H3" />
+  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+</svg></span><span><span class="t">Sign-in &amp; registration</span></span></a><a href="../../../build/app-menu/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M4 5h16" />
+  <path d="M4 12h16" />
+  <path d="M4 19h16" />
+</svg></span><span><span class="t">Menu &amp; content</span></span></a><a href="../../../build/old-app-builder/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Your old App Builder settings</span></span></a></div></div><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-look" aria-current="true">Look &amp; features<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega wide" id="menu-look" role="menu"><a href="../../index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" />
+  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+</svg></span><span><span class="t">Look &amp; features: overview</span></span></a><a href="../../design/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" />
+  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+</svg></span><span><span class="t">Colours &amp; fonts</span></span></a><a href="../../home/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+  <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+</svg></span><span><span class="t">Home screen</span></span></a><a href="../../pages/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Custom pages</span></span></a><a href="../../translations/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m5 8 6 6" />
+  <path d="m4 14 6-6 2-3" />
+  <path d="M2 5h12" />
+  <path d="M7 2h1" />
+  <path d="m22 22-5-10-5 10" />
+  <path d="M14 18h6" />
+</svg></span><span><span class="t">Translations</span></span></a><a href="../index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" />
+  <path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" />
+  <path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" />
+  <path d="M4 22h16" />
+  <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
+  <path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" />
+</svg></span><span><span class="t">Play &amp; Win</span></span></a><a href="../../widgets/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <rect width="7" height="7" x="3" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="14" rx="1" />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+</svg></span><span><span class="t">Home-screen widgets</span></span></a><a href="../../scope/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Per event, per language or for the whole app</span></span></a><a href="../../home-blocks-vs-widgets/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Home screen blocks and home-screen widgets</span></span></a></div></div><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-release">Release<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega" id="menu-release" role="menu"><a href="../../../release/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+</svg></span><span><span class="t">Release: overview</span></span></a><a href="../../../release/screenshots/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16" />
+  <path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2" />
+  <circle cx="13" cy="7" r="1" fill="currentColor" />
+  <rect x="8" y="2" width="14" height="14" rx="2" />
+</svg></span><span><span class="t">Store screenshots</span></span></a><a href="../../../release/builds/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
+  <path d="M12 22V12" />
+  <polyline points="3.29 7 12 12 20.71 7" />
+  <path d="m7.5 4.27 9 5.15" />
+</svg></span><span><span class="t">Build &amp; test</span></span></a><a href="../../../release/publish/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+</svg></span><span><span class="t">Publish</span></span></a><a href="../../../release/journey/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">From test build to the stores</span></span></a></div></div><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-after">After launch<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega" id="menu-after" role="menu"><a href="../../../after/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M18 17V9" />
+  <path d="M13 17V5" />
+  <path d="M8 17v-3" />
+</svg></span><span><span class="t">After launch: overview</span></span></a><a href="../../../after/analytics/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M18 17V9" />
+  <path d="M13 17V5" />
+  <path d="M8 17v-3" />
+</svg></span><span><span class="t">Analytics</span></span></a><a href="../../../after/analytics/how-numbers-are-counted/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M18 17V9" />
+  <path d="M13 17V5" />
+  <path d="M8 17v-3" />
+</svg></span><span><span class="t">How the numbers are counted</span></span></a><a href="../../../after/updating/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Update your app after launch</span></span></a></div></div><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-help">Help<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega" id="menu-help" role="menu"><a href="../../../help/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <circle cx="12" cy="12" r="10" />
+  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+  <path d="M12 17h.01" />
+</svg></span><span><span class="t">Help: overview</span></span></a><a href="../../../help/glossary/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Glossary</span></span></a><a href="../../../help/messages/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Messages, word for word</span></span></a><a href="../../../help/limits/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Limits, sizes and formats</span></span></a><a href="../../../help/set-by-team/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Set by your ExpoPlatform team</span></span></a><a href="../../../help/whats-new/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">What changed</span></span></a><a href="../../../help/about/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">About this guide</span></span></a></div></div></nav><button class="search-trigger" type="button" aria-haspopup="dialog"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg><span>Search the guide</span><span class="kbd">/</span></button><button class="icon-btn theme-toggle" type="button" aria-label="Switch between light and dark"><svg class="i " viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+</svg></button></header><div class="band"><div class="band-inner"><div class="eyebrow">Look &amp; features</div><nav class="subtabs" aria-label="This section"><a class="subtab" href="../index.html">Overview</a><a class="subtab" href="../index.html#guides">Guides</a><a class="subtab" href="index.html" aria-current="page">Field reference</a><a class="subtab" href="../../../help/whats-new/index.html">What changed</a></nav></div></div><div class="doc"><aside class="sidenav" aria-label="Look &amp; features"><label class="filter"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg><input type="search" placeholder="Filter" aria-label="Filter this list"></label><a class="nav-link" href="../../index.html" data-page="look">About this tab<span class="sr"> (Look &amp; features)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><div class="nav-group" data-open="false"><button type="button" aria-expanded="false">Colours &amp; fonts<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="nav-items"><a class="nav-link in-group" href="../../design/index.html" data-page="look/design">Overview<span class="sr"> (Colours &amp; fonts)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../design/change-event-colours/index.html" data-page="look/design/change-event-colours">Change an event&#39;s colours<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../design/start-from-palette/index.html" data-page="look/design/start-from-palette">Start from a ready-made palette<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../design/set-dark-colours/index.html" data-page="look/design/set-dark-colours">Set the dark-mode colours<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../design/fix-contrast/index.html" data-page="look/design/fix-contrast">Fix a hard-to-read brand colour<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../design/change-fonts/index.html" data-page="look/design/change-fonts">Change the fonts<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../design/change-sign-in-pictures/index.html" data-page="look/design/change-sign-in-pictures">Change the sign-in pictures and the loading backdrop<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../design/missing-pictures/index.html" data-page="look/design/missing-pictures">Choose what lists show when a logo or photo is missing<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../design/back-to-default/index.html" data-page="look/design/back-to-default">Go back to a default<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../design/colour-event-picker/index.html" data-page="look/design/colour-event-picker">Colour the event picker (apps with several events)<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../design/fields/index.html" data-page="look/design/fields">Field reference<span class="sr"> (Colours &amp; fonts)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></div></div><div class="nav-group" data-open="false"><button type="button" aria-expanded="false">Home screen<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="nav-items"><a class="nav-link in-group" href="../../home/index.html" data-page="look/home">Overview<span class="sr"> (Home screen)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/designed-home-on-off/index.html" data-page="look/home/designed-home-on-off">Turn the designed home screen on or off<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/choose-layout/index.html" data-page="look/home/choose-layout">Choose the layout<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/set-top-bar/index.html" data-page="look/home/set-top-bar">Set the top bar<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/write-header/index.html" data-page="look/home/write-header">Write the words at the top of the home<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/header-picture/index.html" data-page="look/home/header-picture">Set the header picture, video, logo and tint<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/manage-blocks/index.html" data-page="look/home/manage-blocks">Add, order, hide and remove blocks<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/block-audience/index.html" data-page="look/home/block-audience">Choose who sees a block<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/link-buttons/index.html" data-page="look/home/link-buttons">Make a button, tile or picture open a screen or a web page<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/ai-assistant/index.html" data-page="look/home/ai-assistant">Add the AI assistant and prepare it<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/original-home/index.html" data-page="look/home/original-home">Show or copy the event&#39;s original home page<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/badge-pictures/index.html" data-page="look/home/badge-pictures">Set the badge pictures<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/restore-default/index.html" data-page="look/home/restore-default">Put the home back to the default<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/other-event/index.html" data-page="look/home/other-event">Edit another event&#39;s home (apps with several events)<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../home/fields/index.html" data-page="look/home/fields">Field reference<span class="sr"> (Home screen)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></div></div><div class="nav-group" data-open="false"><button type="button" aria-expanded="false">Custom pages<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="nav-items"><a class="nav-link in-group" href="../../pages/index.html" data-page="look/pages">Overview<span class="sr"> (Custom pages)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/write-a-page/index.html" data-page="look/pages/write-a-page">Write a page of your own<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/write-in-other-languages/index.html" data-page="look/pages/write-in-other-languages">Write a page in several languages<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/split-into-tabs/index.html" data-page="look/pages/split-into-tabs">Split a page into tabs<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/add-a-built-in-screen/index.html" data-page="look/pages/add-a-built-in-screen">Add a built-in screen to the menu<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/add-a-page-to-the-menu/index.html" data-page="look/pages/add-a-page-to-the-menu">Put a saved page in the menu<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/link-from-text/index.html" data-page="look/pages/link-from-text">Add a link in a Text block<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/link-from-html/index.html" data-page="look/pages/link-from-html">Open a screen or a page from your own HTML<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/limit-a-block/index.html" data-page="look/pages/limit-a-block">Show a block only to guests or only to signed-in people<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/delete-a-page/index.html" data-page="look/pages/delete-a-page">Delete a page<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/edit-an-event-page/index.html" data-page="look/pages/edit-an-event-page">Change a page made before App Studio<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../pages/fields/index.html" data-page="look/pages/fields">Field reference<span class="sr"> (Custom pages)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></div></div><div class="nav-group" data-open="false"><button type="button" aria-expanded="false">Translations<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="nav-items"><a class="nav-link in-group" href="../../translations/index.html" data-page="look/translations">Overview<span class="sr"> (Translations)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../translations/change-a-text/index.html" data-page="look/translations/change-a-text">Change a text the app shows<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../translations/back-to-standard/index.html" data-page="look/translations/back-to-standard">Go back to the standard text<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../translations/see-your-wording/index.html" data-page="look/translations/see-your-wording">See which texts carry your wording<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../translations/another-language/index.html" data-page="look/translations/another-language">Work on another language<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../translations/fields/index.html" data-page="look/translations/fields">Field reference<span class="sr"> (Translations)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></div></div><div class="nav-group" data-open="true"><button type="button" aria-expanded="true">Play &amp; Win<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="nav-items"><a class="nav-link in-group" href="../index.html" data-page="look/play-win">Overview<span class="sr"> (Play &amp; Win)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../run-play-win/index.html" data-page="look/play-win/run-play-win">Run Play &amp; Win for an event<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../test-early/index.html" data-page="look/play-win/test-early">Try Play &amp; Win before the event starts<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../edit-texts/index.html" data-page="look/play-win/edit-texts">Change the wording of a Play &amp; Win screen<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../picture-and-link/index.html" data-page="look/play-win/picture-and-link">Set the game&#39;s picture and the Book a meeting link<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../finish/index.html" data-page="look/play-win/finish">Close voting and show the result<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../set-up-kiosk/index.html" data-page="look/play-win/set-up-kiosk">Set up the stand iPad kiosk<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../new-kiosk-link/index.html" data-page="look/play-win/new-kiosk-link">Replace the kiosk link<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../download-entries/index.html" data-page="look/play-win/download-entries">Download the entries for the prize draw<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../delete-entry/index.html" data-page="look/play-win/delete-entry">Delete an entry<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="index.html" aria-current="page" data-page="look/play-win/fields">Field reference<span class="sr"> (Play &amp; Win)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></div></div><div class="nav-group" data-open="false"><button type="button" aria-expanded="false">Home-screen widgets<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="nav-items"><a class="nav-link in-group" href="../../widgets/index.html" data-page="look/widgets">Overview<span class="sr"> (Home-screen widgets)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../widgets/switch-on/index.html" data-page="look/widgets/switch-on">Offer a home-screen widget in your app<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../widgets/counters/index.html" data-page="look/widgets/counters">Choose what Event stats counts<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../widgets/colours/index.html" data-page="look/widgets/colours">Choose a widget&#39;s colours<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../widgets/switch-off/index.html" data-page="look/widgets/switch-off">Take a widget out of your app<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../widgets/defaults/index.html" data-page="look/widgets/defaults">Go back to a widget&#39;s default settings<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../widgets/fields/index.html" data-page="look/widgets/fields">Field reference<span class="sr"> (Home-screen widgets)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></div></div><a class="nav-link" href="../../scope/index.html" data-page="look/scope">Per event, per language or for the whole app<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link" href="../../home-blocks-vs-widgets/index.html" data-page="look/home-blocks-vs-widgets">Home screen blocks and home-screen widgets<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></aside><main class="main-col" id="main"><article class="card"><div class="card-top"><nav class="crumbs" aria-label="Breadcrumbs"><a href="../../../index.html">Guide</a><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m9 18 6-6-6-6" />
+</svg><a href="../../index.html">Look &amp; features</a><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m9 18 6-6-6-6" />
+</svg><a href="../index.html">Play &amp; Win</a></nav><div class="card-actions"><button class="btn btn-secondary btn-sm mark-done" type="button" aria-pressed="false" data-page="look/play-win/fields"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg><span>Mark as done</span></button></div></div><h1>Play &amp; Win: field reference</h1><p class="lead">Every field in <strong class="ui">Play &amp; Win</strong>: what it takes, its default, its limits and messages, whether it is set per event, per language or for the whole app, and what Save does. Numbers on the screen match the rows.</p><figure class="shot-fig" data-src="s1251"><div class="shot" data-shot="play-win/00"><img class="only-light" src="../../../images/play-win/light-00.jpg" width="1800" height="1061" alt="Play &amp; Win: numbered fields on the screen." loading="lazy"><img class="only-dark" src="../../../images/play-win/dark-00.jpg" width="1800" height="1061" alt="Play &amp; Win: numbered fields on the screen." loading="lazy"><button type="button" class="marker" style="left:24.9%;top:32.5%" data-field="play-win-on" aria-label="1: Play &amp; Win">1</button><button type="button" class="marker" style="left:24.9%;top:43.5%" data-field="test-mode" aria-label="2: Test mode">2</button><button type="button" class="marker" style="left:25.1%;top:71.2%" data-field="campaign-finished" aria-label="3: Campaign finished">3</button><button type="button" class="enlarge icon-btn" aria-label="Enlarge"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M15 3h6v6" />
+  <path d="m21 3-7 7" />
+  <path d="m3 21 7-7" />
+  <path d="M9 21H3v-6" />
+</svg></button></div><div class="shot-legend"><a class="lg" data-field="play-win-on" href="index.html#play-win-on"><span class="num">1</span><span class="">Play &amp; Win</span></a><a class="lg" data-field="test-mode" href="index.html#test-mode"><span class="num">2</span><span class="">Test mode</span></a><a class="lg" data-field="campaign-finished" href="index.html#campaign-finished"><span class="num">3</span><span class="">Campaign finished</span></a></div><figcaption class="figcap">Play &amp; Win: numbered fields on the screen. <span class="shot-meta">Captured on 13 Oct 2026 from the demo app BEAUTÉ Paris 2026.</span></figcaption></figure><h2 id="fields">Fields</h2><div class="fx-tools"><label class="fx-filter"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg><input type="search" placeholder="Filter fields" aria-label="Filter fields"></label><span class="fx-count">39 fields</span></div><div class="fx-wrap"><table class="fx"><thead><tr><th>#</th><th>Field</th><th>Type and options</th><th>Default</th><th>Limits and messages</th><th>Kept</th><th>Saving and the app</th><th></th></tr></thead><tbody><tr id="event" tabindex="-1" data-field="event" data-src="s1248"><td class="n">1</td><td class="f"><b class="">Event</b><span>Play &amp; Win</span></td><td>select</td><td>The app&#39;s first event</td><td>Lists the app&#39;s events by title (an event without a title shows as Event and its number).</td><td>app</td><td>Nothing. It picks which event&#39;s Play &amp; Win you edit, and shows that event&#39;s entries. Unsaved edits are kept per event until you save or discard them.</td><td><button class="rowlink" type="button" data-copy="#event" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="play-win-on" tabindex="-1" data-field="play-win-on" data-src="s1249"><td class="n">2</td><td class="f"><b class="">Play &amp; Win</b><span>Play &amp; Win</span></td><td>toggle</td><td>Off for an event nobody has set up</td><td></td><td>per event</td><td>Kept in this event&#39;s unsaved draft; Save Play &amp; Win stores it for this event.<div class="in-app">The app&#39;s menu shows the Play &amp; Win row only to signed-in people, only when this event&#39;s menu carries the row, and only while the campaign is on.</div></td><td><button class="rowlink" type="button" data-copy="#play-win-on" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="test-mode" tabindex="-1" data-field="test-mode" data-src="s1329"><td class="n">3</td><td class="f"><b class="">Test mode</b><span>Play &amp; Win</span></td><td>toggle</td><td>Off for an event nobody has set up</td><td></td><td>per event</td><td>Kept in this event&#39;s unsaved draft; Save Play &amp; Win stores it for this event.</td><td><button class="rowlink" type="button" data-copy="#test-mode" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="campaign-finished" tabindex="-1" data-field="campaign-finished" data-src="s1287"><td class="n">4</td><td class="f"><b class="">Campaign finished</b><span>Result</span></td><td>toggle</td><td>Off for an event nobody has set up</td><td>Needs the actual number before it can be saved.</td><td>per event</td><td>Kept in this event&#39;s unsaved draft; Save Play &amp; Win stores it for this event. Once finished, voting is never open, also on the kiosk.</td><td><button class="rowlink" type="button" data-copy="#campaign-finished" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="actual-number" tabindex="-1" data-field="actual-number" data-src="s1288"><td class="n">5</td><td class="f"><b class="">Actual number</b><span>Result</span></td><td>number</td><td>Empty</td><td>Required while Campaign finished is on. A whole number of digits only, at most 999,999,999.<div><q class="msg-inline">Enter the actual number: attendees who voted see it on the final screen.</q> <q class="msg-inline">A whole number, digits only.</q> <q class="msg-inline">That number is too large.</q></div></td><td>per event</td><td>Kept in this event&#39;s unsaved draft; Save Play &amp; Win stores it. The app is not sent the number until the campaign is finished.<div class="in-app">The final screen of attendees who voted, once the campaign is finished; before that the app never receives the number.</div></td><td><button class="rowlink" type="button" data-copy="#actual-number" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="picture" tabindex="-1" data-field="picture" data-src="s1280"><td class="n">6</td><td class="f"><b class="">Picture</b><span>Picture and link</span></td><td>image</td><td>Empty: the default illustration (the trophy cups) is shown.</td><td>PNG or JPEG, up to 10 MB, cropped in any shape you like; or a pasted link that starts with https://.<div><q class="msg-inline">Choose a PNG or JPEG picture</q> <q class="msg-inline">The picture is larger than 10 MB</q> <q class="msg-inline">The link must start with https://</q> <q class="msg-inline">Failed to fetch that picture: [reason]</q></div></td><td>per event</td><td>The picture is uploaded at once (“Upload” in the crop window, or a pasted link, fetched when you leave the box); this event uses it only after “Save Play &amp; Win”.</td><td><button class="rowlink" type="button" data-copy="#picture" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="book-a-meeting-link" tabindex="-1" data-field="book-a-meeting-link" data-src="s1275"><td class="n">7</td><td class="f"><b class="">“Book a meeting” link</b><span>Picture and link</span></td><td>text</td><td>Empty: the final screen shows no Book a meeting button.</td><td>A full web address (http:// or https://), at most 2048 characters. The box shows https:// as a placeholder.<div><q class="msg-inline">Enter a full link starting with https://, or leave it empty to hide the button.</q></div></td><td>per event</td><td>Kept in this event&#39;s unsaved draft; Save Play &amp; Win stores it for this event.<div class="in-app">The final screen&#39;s Book a meeting button opens it outside the app; with no link the button is not shown.</div></td><td><button class="rowlink" type="button" data-copy="#book-a-meeting-link" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="text-language" tabindex="-1" data-field="text-language" data-src="s1330"><td class="n">8</td><td class="f"><b class="">Text language</b><span>Texts</span></td><td>select<div class="opts"><span class="pill">English</span> <span class="pill">German</span> <span class="pill">French</span> <span class="pill">Spanish</span> <span class="pill">Spanish (Latin America)</span> <span class="pill">Italian</span> <span class="pill">Russian</span> <span class="pill">Kazakh</span> <span class="pill">Swedish</span> <span class="pill">Turkish</span> <span class="pill">Dutch</span> <span class="pill">Thai</span> <span class="pill">Japanese</span> <span class="pill">Chinese</span> <span class="pill">Chinese (Traditional)</span> <span class="pill">Icelandic</span> <span class="pill">Korean</span> <span class="pill">Vietnamese</span> <span class="pill">Polish</span> <span class="pill">Arabic</span> <span class="pill">Portuguese</span> <span class="pill">Finnish</span></div></td><td>English</td><td>The 22 languages the app ships with. A language that holds at least one text of your own is marked edited.</td><td>app</td><td>Nothing. It picks which language you edit.</td><td><button class="rowlink" type="button" data-copy="#text-language" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="vote-label" tabindex="-1" data-field="vote-label" data-src="s1331"><td class="n">9</td><td class="f"><b class="">Label</b><span>Voting screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line. Bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>Kept in this event&#39;s unsaved draft; Save Play &amp; Win stores it for this language. A text left as, or set back to, the app&#39;s wording is not stored.</td><td><button class="rowlink" type="button" data-copy="#vote-label" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="vote-title" tabindex="-1" data-field="vote-title" data-src="s1269"><td class="n">10</td><td class="f"><b class="">Title</b><span>Voting screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>Kept in this event&#39;s unsaved draft; Save Play &amp; Win stores it for this language. A text left as, or set back to, the app&#39;s wording is not stored.</td><td><button class="rowlink" type="button" data-copy="#vote-title" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="vote-subtitle" tabindex="-1" data-field="vote-subtitle" data-src="s1332"><td class="n">11</td><td class="f"><b class="">Subtitle</b><span>Voting screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#vote-subtitle" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="vote-promotion" tabindex="-1" data-field="vote-promotion" data-src="s1333"><td class="n">12</td><td class="f"><b class="">Promotion</b><span>Voting screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#vote-promotion" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="vote-button" tabindex="-1" data-field="vote-button" data-src="s1334"><td class="n">13</td><td class="f"><b class="">Vote button</b><span>Voting screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line; bold, italic and accent colour only.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#vote-button" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="vote-loading" tabindex="-1" data-field="vote-loading" data-src="s1335"><td class="n">14</td><td class="f"><b class="">While sending</b><span>Voting screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line; bold, italic and accent colour only.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#vote-loading" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="voted-title" tabindex="-1" data-field="voted-title" data-src="s1336"><td class="n">15</td><td class="f"><b class="">Title</b><span>Thank-you screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#voted-title" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="voted-subtitle" tabindex="-1" data-field="voted-subtitle" data-src="s1337"><td class="n">16</td><td class="f"><b class="">Subtitle</b><span>Thank-you screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#voted-subtitle" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="voted-promotion" tabindex="-1" data-field="voted-promotion" data-src="s1338"><td class="n">17</td><td class="f"><b class="">Promotion</b><span>Thank-you screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#voted-promotion" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="voted-guess-label" tabindex="-1" data-field="voted-guess-label" data-src="s1339"><td class="n">18</td><td class="f"><b class="">Guess label</b><span>Thank-you screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line; bold, italic and accent colour only.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#voted-guess-label" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="voted-unit" tabindex="-1" data-field="voted-unit" data-src="s1340"><td class="n">19</td><td class="f"><b class="">Unit</b><span>Thank-you screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line; bold, italic and accent colour only.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#voted-unit" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="voted-notice" tabindex="-1" data-field="voted-notice" data-src="s1341"><td class="n">20</td><td class="f"><b class="">Notice</b><span>Thank-you screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#voted-notice" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="rules-text" tabindex="-1" data-field="rules-text" data-src="s1342"><td class="n">21</td><td class="f"><b class="">Rules</b><span>Rules sheet</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#rules-text" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="rules-close-button" tabindex="-1" data-field="rules-close-button" data-src="s1343"><td class="n">22</td><td class="f"><b class="">Close button</b><span>Rules sheet</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line; bold, italic and accent colour only.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#rules-close-button" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="closed-title" tabindex="-1" data-field="closed-title" data-src="s1302"><td class="n">23</td><td class="f"><b class="">Title</b><span>Voting closed</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts. The stand-iPad kiosk shows this screen too while voting is not open.</td><td><button class="rowlink" type="button" data-copy="#closed-title" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="closed-subtitle" tabindex="-1" data-field="closed-subtitle" data-src="s1344"><td class="n">24</td><td class="f"><b class="">Subtitle</b><span>Voting closed</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#closed-subtitle" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="final-tag" tabindex="-1" data-field="final-tag" data-src="s1345"><td class="n">25</td><td class="f"><b class="">Tag</b><span>Final screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line; bold, italic and accent colour only.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#final-tag" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="final-guess-label" tabindex="-1" data-field="final-guess-label" data-src="s1346"><td class="n">26</td><td class="f"><b class="">Guess label</b><span>Final screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line; bold, italic and accent colour only.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#final-guess-label" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="final-actual-label" tabindex="-1" data-field="final-actual-label" data-src="s1347"><td class="n">27</td><td class="f"><b class="">Actual label</b><span>Final screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line; bold, italic and accent colour only.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#final-actual-label" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="final-unit" tabindex="-1" data-field="final-unit" data-src="s1348"><td class="n">28</td><td class="f"><b class="">Unit</b><span>Final screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line; bold, italic and accent colour only.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#final-unit" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="final-title" tabindex="-1" data-field="final-title" data-src="s1349"><td class="n">29</td><td class="f"><b class="">Title</b><span>Final screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#final-title" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="final-subtitle" tabindex="-1" data-field="final-subtitle" data-src="s1350"><td class="n">30</td><td class="f"><b class="">Subtitle</b><span>Final screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#final-subtitle" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="final-promotion-title" tabindex="-1" data-field="final-promotion-title" data-src="s1351"><td class="n">31</td><td class="f"><b class="">Promotion title</b><span>Final screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#final-promotion-title" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="final-promotion-subtitle" tabindex="-1" data-field="final-promotion-subtitle" data-src="s1352"><td class="n">32</td><td class="f"><b class="">Promotion subtitle</b><span>Final screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#final-promotion-subtitle" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="final-button" tabindex="-1" data-field="final-button" data-src="s1279"><td class="n">33</td><td class="f"><b class="">&quot;Book a meeting&quot; button</b><span>Final screen</span></td><td>rich-text</td><td>The app&#39;s own wording for the chosen language, shown muted with the Default badge.</td><td>One line; bold, italic and accent colour only. The button shows only when the “Book a meeting” link is set.</td><td>per event and language</td><td>As the other texts.</td><td><button class="rowlink" type="button" data-copy="#final-button" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="consent-text" tabindex="-1" data-field="consent-text" data-src="s1353"><td class="n">34</td><td class="f"><b class="">Consent text</b><span>Consent</span></td><td>rich-text</td><td>The app&#39;s own consent wording for the chosen language, shown muted with the Default badge.</td><td>Paragraphs and line breaks; bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>As the other texts. A changed wording, in any language, gives a new consent version once saved; each entry records the version its attendee agreed to.</td><td><button class="rowlink" type="button" data-copy="#consent-text" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="kiosk-on" tabindex="-1" data-field="kiosk-on" data-src="s1315"><td class="n">35</td><td class="f"><b class="">Kiosk</b><span>Kiosk (stand iPad)</span></td><td>toggle</td><td>Off</td><td></td><td>per event</td><td>Kept in this event&#39;s unsaved draft. Switching it on the first time makes the kiosk link; “Save Play &amp; Win” stores it, and only then does the link work. Switched off and saved, the link shows “This page is not available.”; switching on again brings back the same link.</td><td><button class="rowlink" type="button" data-copy="#kiosk-on" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="kiosk-link" tabindex="-1" data-field="kiosk-link" data-src="s1354"><td class="n">36</td><td class="f"><b class="">Kiosk link</b><span>Kiosk (stand iPad)</span></td><td>other</td><td></td><td>Read-only, with a QR code of the link beside it. Keep the kiosk link private: anyone who has it can enter the draw.</td><td>per event</td><td>Made with the Kiosk switch or New link; works once saved.</td><td><button class="rowlink" type="button" data-copy="#kiosk-link" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="kiosk-consent-language" tabindex="-1" data-field="kiosk-consent-language" data-src="s1355"><td class="n">37</td><td class="f"><b class="">Kiosk consent language</b><span>Kiosk (stand iPad)</span></td><td>select<div class="opts"><span class="pill">English</span> <span class="pill">German</span> <span class="pill">French</span> <span class="pill">Spanish</span> <span class="pill">Spanish (Latin America)</span> <span class="pill">Italian</span> <span class="pill">Russian</span> <span class="pill">Kazakh</span> <span class="pill">Swedish</span> <span class="pill">Turkish</span> <span class="pill">Dutch</span> <span class="pill">Thai</span> <span class="pill">Japanese</span> <span class="pill">Chinese</span> <span class="pill">Chinese (Traditional)</span> <span class="pill">Icelandic</span> <span class="pill">Korean</span> <span class="pill">Vietnamese</span> <span class="pill">Polish</span> <span class="pill">Arabic</span> <span class="pill">Portuguese</span> <span class="pill">Finnish</span></div></td><td>English</td><td>A language holding your own kiosk consent is marked edited.</td><td>app</td><td>Nothing. It picks which language of the kiosk consent you edit.</td><td><button class="rowlink" type="button" data-copy="#kiosk-consent-language" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="kiosk-consent-text" tabindex="-1" data-field="kiosk-consent-text" data-src="s1356"><td class="n">38</td><td class="f"><b class="">Consent text</b><span>Kiosk (stand iPad)</span></td><td>rich-text</td><td>The kiosk&#39;s own consent for the chosen language (it exists in English, German, French, Spanish, Latin American Spanish, Italian, Portuguese and Dutch; other languages show the English one).</td><td>Bold, italic and accent colour only; at most 4000 characters per language.</td><td>per event and language</td><td>Kept in this event&#39;s unsaved draft; Save Play &amp; Win stores it. A text left as, or set back to, the kiosk default is not stored.</td><td><button class="rowlink" type="button" data-copy="#kiosk-consent-text" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="entries-table" tabindex="-1" data-field="entries-table" data-src="s1357"><td class="n">39</td><td class="f"><b class="">Play &amp; Win entries</b><span>Entries</span></td><td>list<div class="opts"><span class="pill">First name</span> <span class="pill">Last name</span> <span class="pill">Company</span> <span class="pill">Email</span> <span class="pill">Guess</span> <span class="pill">Source</span> <span class="pill">Submitted</span> <span class="pill">Consent given</span> <span class="pill">Consent version</span></div></td><td></td><td>The options are the table&#39;s column heads, plus a delete button per row. One row per entry, oldest first; a missing company, date or consent version shows as -. Source reads App or Kiosk. Dates show in the viewer&#39;s own date format.</td><td>per event</td><td>Nothing: it lists this event&#39;s entries, loaded when Play &amp; Win opens and again on “Refresh”.</td><td><button class="rowlink" type="button" data-copy="#entries-table" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr></tbody></table></div><h2 id="buttons">Buttons and controls</h2><div class="fx-wrap"><table class="fx fx2"><thead><tr><th>Button</th><th>What it does</th></tr></thead><tbody><tr data-src="s1358"><td class="f"><b class="">Discard changes</b><span>Play &amp; Win</span></td><td>Throws away this event&#39;s unsaved edits; what was saved stays as it was.</td></tr><tr data-src="s1359"><td class="f"><b class="">Upload</b><span>Picture and link</span></td><td>Opens the file chooser and then the crop window; nothing is sent yet. Reads Replace once a picture is set.</td></tr><tr data-src="s605"><td class="f"><b class="">Upload</b><span>Picture and link</span></td><td>The button of the crop window: uploads the cropped picture and stores it for this app at once, before Save Play &amp; Win.</td></tr><tr data-src="s606"><td class="f"><b class="">Or paste a link to a picture</b><span>Picture and link</span></td><td>A link box: leaving it (or pressing Enter) with a link in it makes App Studio fetch that picture and keep it for this app at once, before “Save Play &amp; Win”.</td></tr><tr data-src="s1278"><td class="f"><b class="">Use default</b><span>Picture and link</span></td><td>Shown once a picture is set: goes back to the default illustration in the form; saved with Save Play &amp; Win.</td></tr><tr data-src="s608"><td class="f"><b class="">Open the picture</b><span>Picture and link</span></td><td>The thumbnail of a set picture: opens the stored picture in a new tab. Only reads; changes nothing.</td></tr><tr data-src="s1360"><td class="f"><b class="described">The title bar of a text card (Voting screen, Thank-you screen and the others)</b><span>Texts</span></td><td>Opens or closes the card. The Voting screen card starts open. Changes nothing.</td></tr><tr data-src="s1265"><td class="f"><b class="">Use default</b><span>Texts</span></td><td>Shown once a text is edited: puts back the app&#39;s own wording for this text in this language, in the form; saved with Save Play &amp; Win.</td></tr><tr data-src="s1361"><td class="f"><b class="">Bold</b><span>Texts</span></td><td>Makes the selected words bold in the form; saved with Save Play &amp; Win.</td></tr><tr data-src="s1362"><td class="f"><b class="">Italic</b><span>Texts</span></td><td>Makes the selected words italic in the form; saved with Save Play &amp; Win.</td></tr><tr data-src="s1363"><td class="f"><b class="">Accent colour</b><span>Texts</span></td><td>Marks the selected words with the accent (the dot button); saved with Save Play &amp; Win.</td></tr><tr data-src="s1364"><td class="f"><b class="">Copy link</b><span>Kiosk (stand iPad)</span></td><td>Copies the kiosk link to the clipboard; the button then reads “Copied”. Nothing is saved.</td></tr><tr data-src="s1304"><td class="f"><b class="">Open</b><span>Kiosk (stand iPad)</span></td><td>Opens the kiosk page in a new tab. Disabled until the link is saved. Opening it changes nothing, but anyone who plays there makes a real entry.</td></tr><tr data-src="s1313"><td class="f"><b class="">New link</b><span>Kiosk (stand iPad)</span></td><td>Asks for confirmation, then makes a new private link in the form. The old link stops working when you save.</td></tr><tr data-src="s1314"><td class="f"><b class="">Make a new link</b><span>Kiosk (stand iPad)</span></td><td>Confirms the new link in the form; nothing is sent until Save Play &amp; Win.</td></tr><tr data-src="s1365"><td class="f"><b class="">Cancel</b><span>Kiosk (stand iPad)</span></td><td>Closes the confirmation and keeps the current link.</td></tr><tr data-src="s1366"><td class="f"><b class="">Use default</b><span>Kiosk (stand iPad)</span></td><td>Shown once the kiosk consent is edited: puts back the kiosk&#39;s default consent for this language in the form; saved with Save Play &amp; Win.</td></tr><tr data-src="s1367"><td class="f"><b class="">Refresh</b><span>Entries</span></td><td>Reads the entries again. Only reads; changes nothing.</td></tr><tr data-src="s1368"><td class="f"><b class="">Try again</b><span>Entries</span></td><td>After a load error: reads the entries again. Only reads; changes nothing.</td></tr><tr data-src="s1318"><td class="f"><b class="">Download CSV</b><span>Entries</span></td><td>Saves a CSV file of the entries on this computer; nothing changes in App Studio. Disabled while there are no entries.</td></tr><tr data-src="s1369"><td class="f"><b class="described">Trash button on each row</b><span>Entries</span></td><td>The trash button of a row: opens the confirmation only. Its accessible name, read out by screen readers, is “Delete [name]&#39;s entry”.</td></tr><tr data-src="s1325"><td class="f"><b class="">Delete entry</b><span>Entries</span></td><td>Deletes the entry for good: it leaves the prize draw and cannot be undone. The list then reloads. The confirmation is titled “Delete this entry?”.</td></tr><tr data-src="s1370"><td class="f"><b class="">Keep it</b><span>Entries</span></td><td>Closes the confirmation; the entry stays.</td></tr><tr data-src="s1250"><td class="f"><b class="">Save Play &amp; Win</b><span>The save bar at the bottom</span></td><td>Saves this event&#39;s Play &amp; Win: switches, result, picture, link, texts and kiosk, all together. Other events stay as they are. Disabled while nothing has changed; while a field is highlighted, it shows a message and saves nothing.</td></tr><tr data-src="s1371"><td class="f"><b class="">Home</b><span>Preview</span></td><td>Starts the phone preview on the app&#39;s home screen. Only the preview changes; nothing is saved.</td></tr><tr data-src="s1371"><td class="f"><b class="">My Badge</b><span>Preview</span></td><td>Starts the phone preview on My Badge, signed in. Only the preview changes; nothing is saved.</td></tr><tr data-src="s1372"><td class="f"><b class="">Boot flow</b><span>Preview</span></td><td>Starts the phone preview at the splash, then sign-in, then choosing the event. Only the preview changes; nothing is saved.</td></tr><tr data-src="s1373"><td class="f"><b class="">Signed-in preview</b><span>Preview</span></td><td>Shown while Home is chosen: shows the home screen as a signed-in attendee sees it. Only the preview changes; nothing is saved.</td></tr><tr data-src="s1373"><td class="f"><b class="">Guest preview</b><span>Preview</span></td><td>Shown while Home is chosen: shows the home screen as a guest sees it. Only the preview changes; nothing is saved.</td></tr></tbody></table></div><nav class="pager" aria-label="Previous and next"><a href="../delete-entry/index.html"><small>Previous</small><span>How to delete an entry</span></a><a class="next" href="../../widgets/index.html"><small>Next</small><span>Home-screen widgets</span></a></nav></article></main><aside class="toc" aria-label="On this page"><span class="toc-title">On this page</span><a href="#fields">Fields</a><a href="#buttons">Buttons and controls</a><div class="stampbox"><b>Checked against App Studio</b>As it was on 14 Oct 2026 (version <code class="val">c599848</code>).<br>Guide v1.0.0.</div></aside></div><footer class="site-footer"><div class="wrap"><div class="foot-cols"><div><p class="foot-h">Get started</p><a href="../../../start/index.html">Overview<span class="sr">: Get started</span></a><a href="../../../start/open/index.html">Open App Studio</a><a href="../../../start/your-apps/index.html">Your apps</a><a href="../../../start/new-app/index.html">Add a new app</a><a href="../../../start/overview/index.html">Your app&#39;s Overview</a><a href="../../../start/find-your-way/index.html">Find your way around</a><a href="../../../start/guide/index.html">App Studio&#39;s built-in Guide</a><a href="../../../start/changes-reach-the-app/index.html">When your changes reach the app</a><a href="../../../start/goals/index.html">Start with a goal</a></div><div><p class="foot-h">Build your app</p><a href="../../../build/index.html">Overview<span class="sr">: Build your app</span></a><a href="../../../build/app-identity/index.html">Name, icon &amp; splash</a><a href="../../../build/app-general/index.html">Events &amp; updates</a><a href="../../../build/app-sign-in/index.html">Sign-in &amp; registration</a><a href="../../../build/app-menu/index.html">Menu &amp; content</a><a href="../../../build/old-app-builder/index.html">Your old App Builder settings</a></div><div><p class="foot-h">Look &amp; features</p><a href="../../index.html">Overview<span class="sr">: Look &amp; features</span></a><a href="../../design/index.html">Colours &amp; fonts</a><a href="../../home/index.html">Home screen</a><a href="../../pages/index.html">Custom pages</a><a href="../../translations/index.html">Translations</a><a href="../index.html">Play &amp; Win</a><a href="../../widgets/index.html">Home-screen widgets</a><a href="../../scope/index.html">Per event, per language or for the whole app</a><a href="../../home-blocks-vs-widgets/index.html">Home screen blocks and home-screen widgets</a></div><div><p class="foot-h">Release</p><a href="../../../release/index.html">Overview<span class="sr">: Release</span></a><a href="../../../release/screenshots/index.html">Store screenshots</a><a href="../../../release/builds/index.html">Build &amp; test</a><a href="../../../release/publish/index.html">Publish</a><a href="../../../release/journey/index.html">From test build to the stores</a></div><div><p class="foot-h">After launch</p><a href="../../../after/index.html">Overview<span class="sr">: After launch</span></a><a href="../../../after/analytics/index.html">Analytics</a><a href="../../../after/analytics/how-numbers-are-counted/index.html">How the numbers are counted</a><a href="../../../after/updating/index.html">Update your app after launch</a></div><div><p class="foot-h">Help</p><a href="../../../help/index.html">Overview<span class="sr">: Help</span></a><a href="../../../help/glossary/index.html">Glossary</a><a href="../../../help/messages/index.html">Messages, word for word</a><a href="../../../help/limits/index.html">Limits, sizes and formats</a><a href="../../../help/set-by-team/index.html">Set by your ExpoPlatform team</a><a href="../../../help/whats-new/index.html">What changed</a><a href="../../../help/about/index.html">About this guide</a></div></div><div class="foot-bottom"><span class="logo"><svg width="142" height="48" viewBox="0 0 142 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M63.9588 0.00012207H49.864V18.9085C49.864 24.0756 54.0527 28.2643 59.2198 28.2643H77.2219V18.4091H82.8423C86.0634 18.4091 88.1625 17.6075 90.0354 15.9939C91.9237 14.367 92.8541 11.8208 92.8541 9.20461C92.8541 6.58753 91.9232 4.08429 90.0361 2.45803C88.1635 0.816192 86.064 0.00012207 82.8423 0.00012207H71.5734V23.1219H59.8349C57.445 23.1219 55.5077 21.1845 55.5077 18.7946V16.5139H68.4243L67.0709 11.5821H55.5077V5.14251L65.324 5.14251L63.9588 0.00012207ZM86.9465 9.20461C86.9465 10.3694 86.5332 11.3985 85.7176 12.1382C84.9004 12.8794 83.656 13.3509 81.9578 13.3509H77.2219V5.05828H81.9578C83.656 5.05828 84.9004 5.52981 85.7176 6.271C86.5332 7.01073 86.9465 8.03977 86.9465 9.20461Z" fill="#03A7FF"/>
+<path d="M9.18131 45.8031V47.8142H0.796875V36.9856H8.98021V38.9966H3.28746V41.3479H8.31503V43.2971H3.28746V45.8031H9.18131Z" fill="#03A7FF"/>
+<path d="M18.7521 47.8142L16.1377 44.0551L13.5698 47.8142H10.6925L14.6991 42.307L10.8936 36.9856H13.74L16.2305 40.4971L18.6747 36.9856H21.3819L17.6073 42.2142L21.6449 47.8142H18.7521Z" fill="#03A7FF"/>
+<path d="M28.1734 36.9856C29.1325 36.9856 29.9627 37.1454 30.664 37.4651C31.3756 37.7848 31.9222 38.2386 32.3038 38.8264C32.6854 39.4143 32.8762 40.1104 32.8762 40.9148C32.8762 41.7089 32.6854 42.405 32.3038 43.0032C31.9222 43.591 31.3756 44.0448 30.664 44.3645C29.9627 44.6739 29.1325 44.8286 28.1734 44.8286H25.9923V47.8142H23.4862V36.9856H28.1734ZM28.0342 42.7866C28.7871 42.7866 29.3594 42.6268 29.7513 42.307C30.1432 41.977 30.3392 41.513 30.3392 40.9148C30.3392 40.3063 30.1432 39.8423 29.7513 39.5225C29.3594 39.1925 28.7871 39.0275 28.0342 39.0275H25.9923V42.7866H28.0342Z" fill="#03A7FF"/>
+<path d="M40.6793 47.9998C39.5552 47.9998 38.5393 47.7575 37.6318 47.2727C36.7346 46.788 36.0281 46.1228 35.5125 45.2772C35.0072 44.4212 34.7545 43.4621 34.7545 42.3999C34.7545 41.3376 35.0072 40.3837 35.5125 39.538C36.0281 38.682 36.7346 38.0117 37.6318 37.527C38.5393 37.0423 39.5552 36.7999 40.6793 36.7999C41.8034 36.7999 42.8141 37.0423 43.7113 37.527C44.6085 38.0117 45.315 38.682 45.8306 39.538C46.3463 40.3837 46.6041 41.3376 46.6041 42.3999C46.6041 43.4621 46.3463 44.4212 45.8306 45.2772C45.315 46.1228 44.6085 46.788 43.7113 47.2727C42.8141 47.7575 41.8034 47.9998 40.6793 47.9998ZM40.6793 45.865C41.3187 45.865 41.8962 45.7206 42.4119 45.4319C42.9275 45.1328 43.3297 44.7203 43.6185 44.1943C43.9176 43.6684 44.0671 43.0702 44.0671 42.3999C44.0671 41.7295 43.9176 41.1314 43.6185 40.6054C43.3297 40.0794 42.9275 39.6721 42.4119 39.3833C41.8962 39.0842 41.3187 38.9347 40.6793 38.9347C40.0399 38.9347 39.4624 39.0842 38.9467 39.3833C38.4311 39.6721 38.0237 40.0794 37.7246 40.6054C37.4359 41.1314 37.2915 41.7295 37.2915 42.3999C37.2915 43.0702 37.4359 43.6684 37.7246 44.1943C38.0237 44.7203 38.4311 45.1328 38.9467 45.4319C39.4624 45.7206 40.0399 45.865 40.6793 45.865Z" fill="#03A7FF"/>
+<path d="M53.7935 36.9856C54.7526 36.9856 55.5828 37.1454 56.2841 37.4651C56.9957 37.7848 57.5423 38.2386 57.9238 38.8264C58.3054 39.4143 58.4962 40.1104 58.4962 40.9148C58.4962 41.7089 58.3054 42.405 57.9238 43.0032C57.5423 43.591 56.9957 44.0448 56.2841 44.3645C55.5828 44.6739 54.7526 44.8286 53.7935 44.8286H51.6123V47.8142H49.1063V36.9856H53.7935ZM53.6543 42.7866C54.4071 42.7866 54.9795 42.6268 55.3714 42.307C55.7633 41.977 55.9592 41.513 55.9592 40.9148C55.9592 40.3063 55.7633 39.8423 55.3714 39.5225C54.9795 39.1925 54.4071 39.0275 53.6543 39.0275H51.6123V42.7866H53.6543Z" fill="#03A7FF"/>
+<path d="M60.9041 36.9856H63.4102V45.7722H68.84V47.8142H60.9041V36.9856Z" fill="#03A7FF"/>
+<path d="M78.5644 45.4938H73.5369L72.5778 47.8142H70.0098L74.8363 36.9856H77.3114L82.1533 47.8142H79.5235L78.5644 45.4938ZM77.7755 43.591L76.0584 39.4452L74.3413 43.591H77.7755Z" fill="#03A7FF"/>
+<path d="M85.3531 39.0275H81.888V36.9856H91.3243V39.0275H87.8592V47.8142H85.3531V39.0275Z" fill="#03A7FF"/>
+<path d="M96.0392 38.9966V41.8584H101.051V43.8695H96.0392V47.8142H93.5332V36.9856H101.717V38.9966H96.0392Z" fill="#03A7FF"/>
+<path d="M109.17 47.9998C108.046 47.9998 107.03 47.7575 106.123 47.2727C105.226 46.788 104.519 46.1228 104.003 45.2772C103.498 44.4212 103.245 43.4621 103.245 42.3999C103.245 41.3376 103.498 40.3837 104.003 39.538C104.519 38.682 105.226 38.0117 106.123 37.527C107.03 37.0423 108.046 36.7999 109.17 36.7999C110.294 36.7999 111.305 37.0423 112.202 37.527C113.099 38.0117 113.806 38.682 114.322 39.538C114.837 40.3837 115.095 41.3376 115.095 42.3999C115.095 43.4621 114.837 44.4212 114.322 45.2772C113.806 46.1228 113.099 46.788 112.202 47.2727C111.305 47.7575 110.294 47.9998 109.17 47.9998ZM109.17 45.865C109.81 45.865 110.387 45.7206 110.903 45.4319C111.418 45.1328 111.821 44.7203 112.109 44.1943C112.409 43.6684 112.558 43.0702 112.558 42.3999C112.558 41.7295 112.409 41.1314 112.109 40.6054C111.821 40.0794 111.418 39.6721 110.903 39.3833C110.387 39.0842 109.81 38.9347 109.17 38.9347C108.531 38.9347 107.953 39.0842 107.438 39.3833C106.922 39.6721 106.515 40.0794 106.216 40.6054C105.927 41.1314 105.782 41.7295 105.782 42.3999C105.782 43.0702 105.927 43.6684 106.216 44.1943C106.515 44.7203 106.922 45.1328 107.438 45.4319C107.953 45.7206 108.531 45.865 109.17 45.865Z" fill="#03A7FF"/>
+<path d="M124.497 47.8142L122.408 44.7976H120.103V47.8142H117.597V36.9856H122.284C123.244 36.9856 124.074 37.1454 124.775 37.4651C125.487 37.7848 126.033 38.2386 126.415 38.8264C126.796 39.4143 126.987 40.1104 126.987 40.9148C126.987 41.7192 126.791 42.4153 126.399 43.0032C126.018 43.5807 125.471 44.0242 124.76 44.3335L127.188 47.8142H124.497ZM124.45 40.9148C124.45 40.3063 124.254 39.8423 123.862 39.5225C123.47 39.1925 122.898 39.0275 122.145 39.0275H120.103V42.8021H122.145C122.898 42.8021 123.47 42.6371 123.862 42.307C124.254 41.977 124.45 41.513 124.45 40.9148Z" fill="#03A7FF"/>
+<path d="M139.446 47.8142L139.43 41.317L136.243 46.6694H135.114L131.943 41.4562V47.8142H129.591V36.9856H131.664L135.717 43.7148L139.708 36.9856H141.766L141.797 47.8142H139.446Z" fill="#03A7FF"/>
+</svg>
+<span class="tag">Smart Events</span></span><span>The App Studio guide, from ExpoPlatform.</span><span class="ver">Guide <b>v1.0.0</b><span class="sep"></span>App Studio version <code class="val">c599848</code><span class="sep"></span>Checked 14 Oct 2026<span class="sep"></span><a href="../../../help/whats-new/index.html">What changed</a></span></div></div></footer><div class="search-dialog" role="dialog" aria-modal="true" aria-label="Search the guide" hidden><div class="search-panel"><div class="search-input"><svg class="i " viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg><input type="search" role="combobox" aria-expanded="true" aria-controls="search-results" aria-autocomplete="list" placeholder="Search pages, fields, messages and words" autocomplete="off"><button class="icon-btn search-close" type="button" aria-label="Close search"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M18 6 6 18" />
+  <path d="m6 6 12 12" />
+</svg></button></div><div class="results" id="search-results" role="listbox" aria-label="Results"></div><div class="search-foot"><span><span class="kbd">↑</span><span class="kbd">↓</span> move</span><span><span class="kbd">Enter</span> open</span><span><span class="kbd">Esc</span> close</span></div></div></div><script src="../../../assets/search-index.js" defer></script><script src="../../../assets/site.js" defer></script></body></html>

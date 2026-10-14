@@ -1,0 +1,393 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="description" content="Every field and control in Sign-in &amp; registration: options, defaults, limits, messages, and where each shows in the app."><script>(function(){var t;try{t=JSON.parse(localStorage.getItem("ab.theme"));}catch(e){}if(t!=="light"&&t!=="dark"){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;})();</script><link rel="icon" href="../../../assets/favicon.svg"><link rel="stylesheet" href="../../../assets/fonts.css"><link rel="stylesheet" href="../../../assets/site.css"><title>Sign-in &amp; registration: field reference | appbuilder</title></head><body class="doc-page" data-page="build/app-sign-in/fields" data-root="../../../"><a class="skip" href="#main">Skip to content</a><header class="topbar"><a class="brand" href="../../../index.html" aria-label="appbuilder home"><span class="logo"><svg width="142" height="48" viewBox="0 0 142 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M63.9588 0.00012207H49.864V18.9085C49.864 24.0756 54.0527 28.2643 59.2198 28.2643H77.2219V18.4091H82.8423C86.0634 18.4091 88.1625 17.6075 90.0354 15.9939C91.9237 14.367 92.8541 11.8208 92.8541 9.20461C92.8541 6.58753 91.9232 4.08429 90.0361 2.45803C88.1635 0.816192 86.064 0.00012207 82.8423 0.00012207H71.5734V23.1219H59.8349C57.445 23.1219 55.5077 21.1845 55.5077 18.7946V16.5139H68.4243L67.0709 11.5821H55.5077V5.14251L65.324 5.14251L63.9588 0.00012207ZM86.9465 9.20461C86.9465 10.3694 86.5332 11.3985 85.7176 12.1382C84.9004 12.8794 83.656 13.3509 81.9578 13.3509H77.2219V5.05828H81.9578C83.656 5.05828 84.9004 5.52981 85.7176 6.271C86.5332 7.01073 86.9465 8.03977 86.9465 9.20461Z" fill="#03A7FF"/>
+<path d="M9.18131 45.8031V47.8142H0.796875V36.9856H8.98021V38.9966H3.28746V41.3479H8.31503V43.2971H3.28746V45.8031H9.18131Z" fill="#03A7FF"/>
+<path d="M18.7521 47.8142L16.1377 44.0551L13.5698 47.8142H10.6925L14.6991 42.307L10.8936 36.9856H13.74L16.2305 40.4971L18.6747 36.9856H21.3819L17.6073 42.2142L21.6449 47.8142H18.7521Z" fill="#03A7FF"/>
+<path d="M28.1734 36.9856C29.1325 36.9856 29.9627 37.1454 30.664 37.4651C31.3756 37.7848 31.9222 38.2386 32.3038 38.8264C32.6854 39.4143 32.8762 40.1104 32.8762 40.9148C32.8762 41.7089 32.6854 42.405 32.3038 43.0032C31.9222 43.591 31.3756 44.0448 30.664 44.3645C29.9627 44.6739 29.1325 44.8286 28.1734 44.8286H25.9923V47.8142H23.4862V36.9856H28.1734ZM28.0342 42.7866C28.7871 42.7866 29.3594 42.6268 29.7513 42.307C30.1432 41.977 30.3392 41.513 30.3392 40.9148C30.3392 40.3063 30.1432 39.8423 29.7513 39.5225C29.3594 39.1925 28.7871 39.0275 28.0342 39.0275H25.9923V42.7866H28.0342Z" fill="#03A7FF"/>
+<path d="M40.6793 47.9998C39.5552 47.9998 38.5393 47.7575 37.6318 47.2727C36.7346 46.788 36.0281 46.1228 35.5125 45.2772C35.0072 44.4212 34.7545 43.4621 34.7545 42.3999C34.7545 41.3376 35.0072 40.3837 35.5125 39.538C36.0281 38.682 36.7346 38.0117 37.6318 37.527C38.5393 37.0423 39.5552 36.7999 40.6793 36.7999C41.8034 36.7999 42.8141 37.0423 43.7113 37.527C44.6085 38.0117 45.315 38.682 45.8306 39.538C46.3463 40.3837 46.6041 41.3376 46.6041 42.3999C46.6041 43.4621 46.3463 44.4212 45.8306 45.2772C45.315 46.1228 44.6085 46.788 43.7113 47.2727C42.8141 47.7575 41.8034 47.9998 40.6793 47.9998ZM40.6793 45.865C41.3187 45.865 41.8962 45.7206 42.4119 45.4319C42.9275 45.1328 43.3297 44.7203 43.6185 44.1943C43.9176 43.6684 44.0671 43.0702 44.0671 42.3999C44.0671 41.7295 43.9176 41.1314 43.6185 40.6054C43.3297 40.0794 42.9275 39.6721 42.4119 39.3833C41.8962 39.0842 41.3187 38.9347 40.6793 38.9347C40.0399 38.9347 39.4624 39.0842 38.9467 39.3833C38.4311 39.6721 38.0237 40.0794 37.7246 40.6054C37.4359 41.1314 37.2915 41.7295 37.2915 42.3999C37.2915 43.0702 37.4359 43.6684 37.7246 44.1943C38.0237 44.7203 38.4311 45.1328 38.9467 45.4319C39.4624 45.7206 40.0399 45.865 40.6793 45.865Z" fill="#03A7FF"/>
+<path d="M53.7935 36.9856C54.7526 36.9856 55.5828 37.1454 56.2841 37.4651C56.9957 37.7848 57.5423 38.2386 57.9238 38.8264C58.3054 39.4143 58.4962 40.1104 58.4962 40.9148C58.4962 41.7089 58.3054 42.405 57.9238 43.0032C57.5423 43.591 56.9957 44.0448 56.2841 44.3645C55.5828 44.6739 54.7526 44.8286 53.7935 44.8286H51.6123V47.8142H49.1063V36.9856H53.7935ZM53.6543 42.7866C54.4071 42.7866 54.9795 42.6268 55.3714 42.307C55.7633 41.977 55.9592 41.513 55.9592 40.9148C55.9592 40.3063 55.7633 39.8423 55.3714 39.5225C54.9795 39.1925 54.4071 39.0275 53.6543 39.0275H51.6123V42.7866H53.6543Z" fill="#03A7FF"/>
+<path d="M60.9041 36.9856H63.4102V45.7722H68.84V47.8142H60.9041V36.9856Z" fill="#03A7FF"/>
+<path d="M78.5644 45.4938H73.5369L72.5778 47.8142H70.0098L74.8363 36.9856H77.3114L82.1533 47.8142H79.5235L78.5644 45.4938ZM77.7755 43.591L76.0584 39.4452L74.3413 43.591H77.7755Z" fill="#03A7FF"/>
+<path d="M85.3531 39.0275H81.888V36.9856H91.3243V39.0275H87.8592V47.8142H85.3531V39.0275Z" fill="#03A7FF"/>
+<path d="M96.0392 38.9966V41.8584H101.051V43.8695H96.0392V47.8142H93.5332V36.9856H101.717V38.9966H96.0392Z" fill="#03A7FF"/>
+<path d="M109.17 47.9998C108.046 47.9998 107.03 47.7575 106.123 47.2727C105.226 46.788 104.519 46.1228 104.003 45.2772C103.498 44.4212 103.245 43.4621 103.245 42.3999C103.245 41.3376 103.498 40.3837 104.003 39.538C104.519 38.682 105.226 38.0117 106.123 37.527C107.03 37.0423 108.046 36.7999 109.17 36.7999C110.294 36.7999 111.305 37.0423 112.202 37.527C113.099 38.0117 113.806 38.682 114.322 39.538C114.837 40.3837 115.095 41.3376 115.095 42.3999C115.095 43.4621 114.837 44.4212 114.322 45.2772C113.806 46.1228 113.099 46.788 112.202 47.2727C111.305 47.7575 110.294 47.9998 109.17 47.9998ZM109.17 45.865C109.81 45.865 110.387 45.7206 110.903 45.4319C111.418 45.1328 111.821 44.7203 112.109 44.1943C112.409 43.6684 112.558 43.0702 112.558 42.3999C112.558 41.7295 112.409 41.1314 112.109 40.6054C111.821 40.0794 111.418 39.6721 110.903 39.3833C110.387 39.0842 109.81 38.9347 109.17 38.9347C108.531 38.9347 107.953 39.0842 107.438 39.3833C106.922 39.6721 106.515 40.0794 106.216 40.6054C105.927 41.1314 105.782 41.7295 105.782 42.3999C105.782 43.0702 105.927 43.6684 106.216 44.1943C106.515 44.7203 106.922 45.1328 107.438 45.4319C107.953 45.7206 108.531 45.865 109.17 45.865Z" fill="#03A7FF"/>
+<path d="M124.497 47.8142L122.408 44.7976H120.103V47.8142H117.597V36.9856H122.284C123.244 36.9856 124.074 37.1454 124.775 37.4651C125.487 37.7848 126.033 38.2386 126.415 38.8264C126.796 39.4143 126.987 40.1104 126.987 40.9148C126.987 41.7192 126.791 42.4153 126.399 43.0032C126.018 43.5807 125.471 44.0242 124.76 44.3335L127.188 47.8142H124.497ZM124.45 40.9148C124.45 40.3063 124.254 39.8423 123.862 39.5225C123.47 39.1925 122.898 39.0275 122.145 39.0275H120.103V42.8021H122.145C122.898 42.8021 123.47 42.6371 123.862 42.307C124.254 41.977 124.45 41.513 124.45 40.9148Z" fill="#03A7FF"/>
+<path d="M139.446 47.8142L139.43 41.317L136.243 46.6694H135.114L131.943 41.4562V47.8142H129.591V36.9856H131.664L135.717 43.7148L139.708 36.9856H141.766L141.797 47.8142H139.446Z" fill="#03A7FF"/>
+</svg>
+</span><span class="divider"></span><span class="product">appbuilder</span></a><nav class="tabs" aria-label="Guide"><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-start">Get started<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega wide" id="menu-start" role="menu"><a href="../../../start/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+</svg></span><span><span class="t">Get started: overview</span></span></a><a href="../../../start/open/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Open App Studio</span></span></a><a href="../../../start/your-apps/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Your apps</span></span></a><a href="../../../start/new-app/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Add a new app</span></span></a><a href="../../../start/overview/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Your app&#39;s Overview</span></span></a><a href="../../../start/find-your-way/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Find your way around</span></span></a><a href="../../../start/guide/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">App Studio&#39;s built-in Guide</span></span></a><a href="../../../start/changes-reach-the-app/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">When your changes reach the app</span></span></a><a href="../../../start/goals/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Start with a goal</span></span></a></div></div><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-build" aria-current="true">Build your app<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega" id="menu-build" role="menu"><a href="../../index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+  <path d="M12 18h.01" />
+</svg></span><span><span class="t">Build your app: overview</span></span></a><a href="../../app-identity/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+  <path d="M12 18h.01" />
+</svg></span><span><span class="t">Name, icon &amp; splash</span></span></a><a href="../../app-general/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M8 2v3" />
+  <path d="M16 2v3" />
+  <rect x="3" y="3" width="18" height="18" rx="2" />
+  <path d="M3 9h18" />
+  <path d="M8 13h.01" />
+  <path d="M12 13h.01" />
+  <path d="M16 13h.01" />
+  <path d="M8 17h.01" />
+  <path d="M12 17h.01" />
+  <path d="M16 17h.01" />
+</svg></span><span><span class="t">Events &amp; updates</span></span></a><a href="../index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m10 17 5-5-5-5" />
+  <path d="M15 12H3" />
+  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+</svg></span><span><span class="t">Sign-in &amp; registration</span></span></a><a href="../../app-menu/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M4 5h16" />
+  <path d="M4 12h16" />
+  <path d="M4 19h16" />
+</svg></span><span><span class="t">Menu &amp; content</span></span></a><a href="../../old-app-builder/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Your old App Builder settings</span></span></a></div></div><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-look">Look &amp; features<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega wide" id="menu-look" role="menu"><a href="../../../look/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" />
+  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+</svg></span><span><span class="t">Look &amp; features: overview</span></span></a><a href="../../../look/design/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" />
+  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+</svg></span><span><span class="t">Colours &amp; fonts</span></span></a><a href="../../../look/home/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+  <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+</svg></span><span><span class="t">Home screen</span></span></a><a href="../../../look/pages/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Custom pages</span></span></a><a href="../../../look/translations/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m5 8 6 6" />
+  <path d="m4 14 6-6 2-3" />
+  <path d="M2 5h12" />
+  <path d="M7 2h1" />
+  <path d="m22 22-5-10-5 10" />
+  <path d="M14 18h6" />
+</svg></span><span><span class="t">Translations</span></span></a><a href="../../../look/play-win/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" />
+  <path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" />
+  <path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" />
+  <path d="M4 22h16" />
+  <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
+  <path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" />
+</svg></span><span><span class="t">Play &amp; Win</span></span></a><a href="../../../look/widgets/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <rect width="7" height="7" x="3" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="14" rx="1" />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+</svg></span><span><span class="t">Home-screen widgets</span></span></a><a href="../../../look/scope/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Per event, per language or for the whole app</span></span></a><a href="../../../look/home-blocks-vs-widgets/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Home screen blocks and home-screen widgets</span></span></a></div></div><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-release">Release<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega" id="menu-release" role="menu"><a href="../../../release/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+</svg></span><span><span class="t">Release: overview</span></span></a><a href="../../../release/screenshots/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16" />
+  <path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2" />
+  <circle cx="13" cy="7" r="1" fill="currentColor" />
+  <rect x="8" y="2" width="14" height="14" rx="2" />
+</svg></span><span><span class="t">Store screenshots</span></span></a><a href="../../../release/builds/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
+  <path d="M12 22V12" />
+  <polyline points="3.29 7 12 12 20.71 7" />
+  <path d="m7.5 4.27 9 5.15" />
+</svg></span><span><span class="t">Build &amp; test</span></span></a><a href="../../../release/publish/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+</svg></span><span><span class="t">Publish</span></span></a><a href="../../../release/journey/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">From test build to the stores</span></span></a></div></div><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-after">After launch<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega" id="menu-after" role="menu"><a href="../../../after/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M18 17V9" />
+  <path d="M13 17V5" />
+  <path d="M8 17v-3" />
+</svg></span><span><span class="t">After launch: overview</span></span></a><a href="../../../after/analytics/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M18 17V9" />
+  <path d="M13 17V5" />
+  <path d="M8 17v-3" />
+</svg></span><span><span class="t">Analytics</span></span></a><a href="../../../after/analytics/how-numbers-are-counted/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M18 17V9" />
+  <path d="M13 17V5" />
+  <path d="M8 17v-3" />
+</svg></span><span><span class="t">How the numbers are counted</span></span></a><a href="../../../after/updating/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M12 5v16" />
+  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+</svg></span><span><span class="t">Update your app after launch</span></span></a></div></div><div class="tabwrap"><button class="tab" type="button" aria-expanded="false" aria-controls="menu-help">Help<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="mega" id="menu-help" role="menu"><a href="../../../help/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <circle cx="12" cy="12" r="10" />
+  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+  <path d="M12 17h.01" />
+</svg></span><span><span class="t">Help: overview</span></span></a><a href="../../../help/glossary/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Glossary</span></span></a><a href="../../../help/messages/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Messages, word for word</span></span></a><a href="../../../help/limits/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Limits, sizes and formats</span></span></a><a href="../../../help/set-by-team/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">Set by your ExpoPlatform team</span></span></a><a href="../../../help/whats-new/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">What changed</span></span></a><a href="../../../help/about/index.html" role="menuitem"><span class="ic"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span><span><span class="t">About this guide</span></span></a></div></div></nav><button class="search-trigger" type="button" aria-haspopup="dialog"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg><span>Search the guide</span><span class="kbd">/</span></button><button class="icon-btn theme-toggle" type="button" aria-label="Switch between light and dark"><svg class="i " viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+</svg></button></header><div class="band"><div class="band-inner"><div class="eyebrow">Build your app</div><nav class="subtabs" aria-label="This section"><a class="subtab" href="../index.html">Overview</a><a class="subtab" href="../index.html#guides">Guides</a><a class="subtab" href="index.html" aria-current="page">Field reference</a><a class="subtab" href="../../../help/whats-new/index.html">What changed</a></nav></div></div><div class="doc"><aside class="sidenav" aria-label="Build your app"><label class="filter"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg><input type="search" placeholder="Filter" aria-label="Filter this list"></label><a class="nav-link" href="../../index.html" data-page="build">About this tab<span class="sr"> (Build your app)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><div class="nav-group" data-open="false"><button type="button" aria-expanded="false">Name, icon &amp; splash<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="nav-items"><a class="nav-link in-group" href="../../app-identity/index.html" data-page="build/app-identity">Overview<span class="sr"> (Name, icon &amp; splash)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-identity/change-icon/index.html" data-page="build/app-identity/change-icon">Change the app icon<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-identity/change-name/index.html" data-page="build/app-identity/change-name">Change the app&#39;s name in the app<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-identity/set-splash/index.html" data-page="build/app-identity/set-splash">Set up the splash screen<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-identity/picture-from-link/index.html" data-page="build/app-identity/picture-from-link">Use a picture from a web address<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-identity/back-to-default/index.html" data-page="build/app-identity/back-to-default">Go back to the default<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-identity/fields/index.html" data-page="build/app-identity/fields">Field reference<span class="sr"> (Name, icon &amp; splash)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></div></div><div class="nav-group" data-open="false"><button type="button" aria-expanded="false">Events &amp; updates<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="nav-items"><a class="nav-link in-group" href="../../app-general/index.html" data-page="build/app-general">Overview<span class="sr"> (Events &amp; updates)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-general/choose-events-by-tag/index.html" data-page="build/app-general/choose-events-by-tag">Make the app offer several events, chosen by event tag<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-general/choose-one-event/index.html" data-page="build/app-general/choose-one-event">Make the app for one event<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-general/fields/index.html" data-page="build/app-general/fields">Field reference<span class="sr"> (Events &amp; updates)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></div></div><div class="nav-group" data-open="true"><button type="button" aria-expanded="true">Sign-in &amp; registration<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="nav-items"><a class="nav-link in-group" href="../index.html" data-page="build/app-sign-in">Overview<span class="sr"> (Sign-in &amp; registration)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../choose-sign-in-mode/index.html" data-page="build/app-sign-in/choose-sign-in-mode">Choose how people sign in to an event<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../edit-button-texts/index.html" data-page="build/app-sign-in/edit-button-texts">Change the texts of the sign-in buttons, in each language<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../event-name-on-sign-in/index.html" data-page="build/app-sign-in/event-name-on-sign-in">Show or hide the event&#39;s name on the sign-in screen<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../add-register-button/index.html" data-page="build/app-sign-in/add-register-button">Let new visitors register from the sign-in screen<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../native-registration/index.html" data-page="build/app-sign-in/native-registration">Use the app&#39;s own registration form<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../switch-features/index.html" data-page="build/app-sign-in/switch-features">Switch the badge and scanning features of an event<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../check-preview/index.html" data-page="build/app-sign-in/check-preview">Check the sign-in screen before saving<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="index.html" aria-current="page" data-page="build/app-sign-in/fields">Field reference<span class="sr"> (Sign-in &amp; registration)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></div></div><div class="nav-group" data-open="false"><button type="button" aria-expanded="false">Menu &amp; content<svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m6 9 6 6 6-6" />
+</svg></button><div class="nav-items"><a class="nav-link in-group" href="../../app-menu/index.html" data-page="build/app-menu">Overview<span class="sr"> (Menu &amp; content)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/choose-event-and-language/index.html" data-page="build/app-menu/choose-event-and-language">Choose the event and the language you edit<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/add-item/index.html" data-page="build/app-menu/add-item">Add a feature, a custom page or a documents page to a section<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/bottom-bar/index.html" data-page="build/app-menu/bottom-bar">Put items in the bottom bar<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/reorder/index.html" data-page="build/app-menu/reorder">Change the order of items in a section<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/rename-and-icon/index.html" data-page="build/app-menu/rename-and-icon">Rename an item or change its icon<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/limit-audience/index.html" data-page="build/app-menu/limit-audience">Limit who sees an item<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/guests-only-page/index.html" data-page="build/app-menu/guests-only-page">Show a custom page to guests only<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/hide-or-remove/index.html" data-page="build/app-menu/hide-or-remove">Hide or remove an item<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/write-custom-page/index.html" data-page="build/app-menu/write-custom-page">Write a custom page<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/add-documents/index.html" data-page="build/app-menu/add-documents">Add documents to a documents page<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/fill-contacts/index.html" data-page="build/app-menu/fill-contacts">Fill a contacts page<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/choose-social/index.html" data-page="build/app-menu/choose-social">Choose the social networks of a social media item<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/check-in-preview/index.html" data-page="build/app-menu/check-in-preview">Check the menu before saving<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/edit-old-page/index.html" data-page="build/app-menu/edit-old-page">Edit a page made before App Studio<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/rename-section/index.html" data-page="build/app-menu/rename-section">Rename a menu section<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a><a class="nav-link in-group" href="../../app-menu/fields/index.html" data-page="build/app-menu/fields">Field reference<span class="sr"> (Menu &amp; content)</span><span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></div></div><a class="nav-link" href="../../old-app-builder/index.html" data-page="build/old-app-builder">Your old App Builder settings<span class="done"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg></span></a></aside><main class="main-col" id="main"><article class="card"><div class="card-top"><nav class="crumbs" aria-label="Breadcrumbs"><a href="../../../index.html">Guide</a><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m9 18 6-6-6-6" />
+</svg><a href="../../index.html">Build your app</a><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m9 18 6-6-6-6" />
+</svg><a href="../index.html">Sign-in &amp; registration</a></nav><div class="card-actions"><button class="btn btn-secondary btn-sm mark-done" type="button" aria-pressed="false" data-page="build/app-sign-in/fields"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20 6 9 17l-5-5" />
+</svg><span>Mark as done</span></button></div></div><h1>Sign-in &amp; registration: field reference</h1><p class="lead">Every field in <strong class="ui">Sign-in &amp; registration</strong>: what it takes, its default, its limits and messages, whether it is set per event, per language or for the whole app, and what Save does. </p><h2 id="fields">Fields</h2><div class="fx-tools"><label class="fx-filter"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg><input type="search" placeholder="Filter fields" aria-label="Filter fields"></label><span class="fx-count">16 fields</span></div><div class="fx-wrap"><table class="fx"><thead><tr><th>#</th><th>Field</th><th>Type and options</th><th>Default</th><th>Limits and messages</th><th>Kept</th><th>Saving and the app</th><th></th></tr></thead><tbody><tr id="sign-in-mode" tabindex="-1" data-field="sign-in-mode" data-src="s384"><td class="n">1</td><td class="f"><b class="">Sign-in</b><span>Signing in</span></td><td>select<div class="opts"><span class="pill">In the app</span> <span class="pill">On a web page</span> <span class="pill">Both</span></div></td><td>The event&#39;s value, copied from the old App Builder; the app treats a value never set as “In the app”.</td><td></td><td>per event</td><td>With “Save changes”, stored for this event, one value for every language.<div class="in-app">The event&#39;s sign-in mode, which the app&#39;s sign-in screen works from: “In the app”, “On a web page” or “Both”.</div></td><td><button class="rowlink" type="button" data-copy="#sign-in-mode" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="web-sign-in-address" tabindex="-1" data-field="web-sign-in-address" data-src="s424"><td class="n">2</td><td class="f"><b class="">Web sign-in address</b><span>Signing in</span></td><td>text</td><td>The event&#39;s value, copied from the old App Builder; empty means the event&#39;s own sign-in page.</td><td>No length limit in the form; a text over 2000 characters is refused when you save.<div><div class="opts-note">A red message says the address has the wrong kind of value.</div></div></td><td>per event</td><td>With “Save changes”, saved in App Studio for this event, one value for every language.<div class="in-app">The web sign-in page the app opens (the event&#39;s external sign-in link); left empty, the event&#39;s own sign-in address from your ExpoPlatform admin is used.</div></td><td><button class="rowlink" type="button" data-copy="#web-sign-in-address" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="when-must-sign-in" tabindex="-1" data-field="when-must-sign-in" data-src="s386"><td class="n">3</td><td class="f"><b class="">When people must sign in</b><span>Signing in</span></td><td>select<div class="opts"><span class="pill">When they open their account</span> <span class="pill">Right after choosing the event</span></div></td><td>The event&#39;s value, copied from the old App Builder.</td><td></td><td>per event</td><td>With “Save changes”, stored for this event, one value for every language.<div class="in-app">“Right after choosing the event” makes the app show the sign-in screen before a signed-out person enters the event; otherwise people enter as guests and signing in stays optional from the side menu. The preview always opens on the sign-in screen, whichever is chosen.</div></td><td><button class="rowlink" type="button" data-copy="#when-must-sign-in" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="sign-in-button" tabindex="-1" data-field="sign-in-button" data-src="s425"><td class="n">4</td><td class="f"><b class="">Sign-in button</b><span>Signing in</span></td><td>text</td><td>The event&#39;s text in this language, copied from the old App Builder; left empty, the app gets “Log in” and the preview shows “Log in”.</td><td>30 characters in the form; App Studio accepts up to 255.</td><td>per event and language</td><td>With “Save changes”, saved in App Studio for this event and the language chosen in “Language of the texts”.<div class="in-app">The label of the sign-in button on the app&#39;s sign-in screen.</div></td><td><button class="rowlink" type="button" data-copy="#sign-in-button" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="web-sign-in-button" tabindex="-1" data-field="web-sign-in-button" data-src="s426"><td class="n">5</td><td class="f"><b class="">Web sign-in button</b><span>Signing in</span></td><td>text</td><td>The event&#39;s text in this language, copied from the old App Builder; left empty, the app shows its own “Log in with SSO”.</td><td>30 characters in the form; App Studio accepts up to 255.</td><td>per event and language</td><td>With “Save changes”, saved in App Studio for this event and language. The app receives it only while Sign-in is “Both”.<div class="in-app">The caption of the app&#39;s second sign-in button, the web (SSO) sign-in button on events set to “Both”.</div></td><td><button class="rowlink" type="button" data-copy="#web-sign-in-button" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="scan-sign-in-button" tabindex="-1" data-field="scan-sign-in-button" data-src="s427"><td class="n">6</td><td class="f"><b class="">Scan-to-sign-in button</b><span>Signing in</span></td><td>text</td><td>The event&#39;s text in this language, copied from the old App Builder; left empty, the app gets “Scan login”.</td><td>30 characters in the form; App Studio accepts up to 255.</td><td>per event and language</td><td>With “Save changes”, saved in App Studio for this event and language.<div class="in-app">The caption of the scan button on the app&#39;s sign-in screen; that button shows only when sign-in by scanning a badge is on for the event.</div></td><td><button class="rowlink" type="button" data-copy="#scan-sign-in-button" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="show-event-name" tabindex="-1" data-field="show-event-name" data-src="s403"><td class="n">7</td><td class="f"><b class="">Show the event&#39;s name on the sign-in screen</b><span>Signing in</span></td><td>toggle</td><td>The event&#39;s value, copied from the old App Builder.</td><td></td><td>per event</td><td>With “Save changes”, saved in App Studio for this event, one value for every language.<div class="in-app">Off hides the event&#39;s name, dates and logo at the top of the app&#39;s sign-in screen.</div></td><td><button class="rowlink" type="button" data-copy="#show-event-name" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="show-register" tabindex="-1" data-field="show-register" data-src="s405"><td class="n">8</td><td class="f"><b class="">Show the register button</b><span>Registration</span></td><td>toggle</td><td>The event&#39;s value, copied from the old App Builder.</td><td></td><td>per event</td><td>With “Save changes”, saved in App Studio for this event, one value for every language.<div class="in-app">The register button on the app&#39;s sign-in screen; it shows when this is on and there is a registration address to open.</div></td><td><button class="rowlink" type="button" data-copy="#show-register" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="register-button-text" tabindex="-1" data-field="register-button-text" data-src="s406"><td class="n">9</td><td class="f"><b class="">Register button</b><span>Registration</span></td><td>text</td><td>The event&#39;s text in this language, copied from the old App Builder; left empty, the app gets “Registration”.</td><td>30 characters in the form; App Studio accepts up to 255.</td><td>per event and language</td><td>With “Save changes”, saved in App Studio for this event and language.<div class="in-app">The label of the register button on the app&#39;s sign-in screen.</div></td><td><button class="rowlink" type="button" data-copy="#register-button-text" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="registration-happens" tabindex="-1" data-field="registration-happens" data-src="s428"><td class="n">10</td><td class="f"><b class="">Registration happens</b><span>Registration</span></td><td>select<div class="opts"><span class="pill">The event&#39;s registration page</span> <span class="pill">Another website</span></div></td><td>“Another website” when the event&#39;s copied value says so, otherwise “The event&#39;s registration page”.</td><td></td><td>per event</td><td>With “Save changes”, stored for this event, one value for every language.<div class="in-app">Where the register button leads: “Another website” opens the “Registration website” address; otherwise the event&#39;s own registration page.</div></td><td><button class="rowlink" type="button" data-copy="#registration-happens" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="registration-website" tabindex="-1" data-field="registration-website" data-src="s409"><td class="n">11</td><td class="f"><b class="">Registration website</b><span>Registration</span></td><td>text</td><td>The event&#39;s value, copied from the old App Builder.</td><td>No length limit in the form; a text over 2000 characters is refused when you save.<div><div class="opts-note">A red message says the address has the wrong kind of value.</div></div></td><td>per event</td><td>With “Save changes”, saved in App Studio for this event, one value for every language. The app receives it only while “Another website” is chosen and it is not empty.<div class="in-app">The address the register button opens.</div></td><td><button class="rowlink" type="button" data-copy="#registration-website" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="native-registration-form" tabindex="-1" data-field="native-registration-form" data-src="s410"><td class="n">12</td><td class="f"><b class="">Native registration form</b><span>Registration</span></td><td>toggle</td><td>Off unless the app already uses its own registration form; an app never set uses the web page.</td><td></td><td>app</td><td>With “Save changes”, saved first, on the app itself, before the event&#39;s settings; if that fails, the error shows and the event&#39;s settings are not saved.<div class="in-app">What the app&#39;s sign-in screen “Registration” button and “Sign up” link open: the app&#39;s own registration form or the event&#39;s registration web page. Whether they show still depends on the event&#39;s settings.</div></td><td><button class="rowlink" type="button" data-copy="#native-registration-form" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="badge-loading-screen" tabindex="-1" data-field="badge-loading-screen" data-src="s429"><td class="n">13</td><td class="f"><b class="">Show the participant&#39;s badge as the loading screen</b><span>Features</span></td><td>toggle</td><td>The event&#39;s value, copied from the old App Builder.</td><td></td><td>per event</td><td>With “Save changes”, saved in App Studio for this event, one value for every language.<div class="in-app">The signed-in person&#39;s digital badge fades in over the loading screen after sign-in while the event&#39;s data downloads; not for exhibitor company owners, and only when the person has a QR code.</div></td><td><button class="rowlink" type="button" data-copy="#badge-loading-screen" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="qr-ring" tabindex="-1" data-field="qr-ring" data-src="s430"><td class="n">14</td><td class="f"><b class="">Ring around QR codes</b><span>Features</span></td><td>toggle</td><td>The event&#39;s value, copied from the old App Builder.</td><td></td><td>per event</td><td>With “Save changes”, saved in App Studio for this event, one value for every language.<div class="in-app">A brand-coloured halo around the QR code of the person&#39;s badge.</div></td><td><button class="rowlink" type="button" data-copy="#qr-ring" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="ocr-scan" tabindex="-1" data-field="ocr-scan" data-src="s431"><td class="n">15</td><td class="f"><b class="">Scan badges by reading the printed text (OCR)</b><span>Features</span></td><td>toggle</td><td>The event&#39;s value, copied from the old App Builder.</td><td></td><td>per event</td><td>With “Save changes”, saved in App Studio for this event, one value for every language.<div class="in-app">The app&#39;s badge scanner for leads reads the badge&#39;s printed text instead of its code.</div></td><td><button class="rowlink" type="button" data-copy="#ocr-scan" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr><tr id="ai-meeting-notes" tabindex="-1" data-field="ai-meeting-notes" data-src="s432"><td class="n">16</td><td class="f"><b class="">AI meeting notes</b><span>Features</span></td><td>toggle</td><td>The app&#39;s value, copied once from the old App Builder with the app&#39;s general settings.</td><td></td><td>app</td><td>With “Save changes”, saved with the app&#39;s general settings in App Studio, so it changes for every event and language.<div class="in-app">The app-wide switch for AI Meeting Notes: the prompt cards, the one-time voice-sample set-up and the recorder. The app also follows whether AI Meeting Notes is switched off for the person&#39;s category or exhibitor.</div></td><td><button class="rowlink" type="button" data-copy="#ai-meeting-notes" aria-label="Copy a link to this field"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg></button></td></tr></tbody></table></div><h2 id="buttons">Buttons and controls</h2><div class="fx-wrap"><table class="fx fx2"><thead><tr><th>Button</th><th>What it does</th></tr></thead><tbody><tr data-src="s433"><td class="f"><b class="">Event</b><span>Event and language bar</span></td><td>Chooses which event&#39;s sign-in and registration settings are shown and edited. It lists the app&#39;s events and shows only when the app has events. Picking one reloads the section&#39;s settings for that event; unsaved edits are dropped without asking. Each event&#39;s settings start from the old App Builder&#39;s values, copied once.</td></tr><tr data-src="s396"><td class="f"><b class="">Language of the texts</b><span>Event and language bar</span></td><td>Chooses which language&#39;s texts are shown and edited; it starts on English. It shows only when the app has more than one language. Switching reloads the section&#39;s settings in that language; unsaved edits are dropped without asking.</td></tr><tr data-src="s387"><td class="f"><b class="">Save changes</b><span>Save bar</span></td><td>Saves only the fields that changed, for this event and language, in App Studio; when “Native registration form” changed, it first saves that for the whole app. Nothing is sent to the old App Builder or the old apps. Disabled until something changes.</td></tr></tbody></table></div><nav class="pager" aria-label="Previous and next"><a href="../check-preview/index.html"><small>Previous</small><span>How to check the sign-in screen before saving</span></a><a class="next" href="../../app-menu/index.html"><small>Next</small><span>Menu &amp; content</span></a></nav></article></main><aside class="toc" aria-label="On this page"><span class="toc-title">On this page</span><a href="#fields">Fields</a><a href="#buttons">Buttons and controls</a><div class="stampbox"><b>Checked against App Studio</b>As it was on 14 Oct 2026 (version <code class="val">c599848</code>).<br>Guide v1.0.0.</div></aside></div><footer class="site-footer"><div class="wrap"><div class="foot-cols"><div><p class="foot-h">Get started</p><a href="../../../start/index.html">Overview<span class="sr">: Get started</span></a><a href="../../../start/open/index.html">Open App Studio</a><a href="../../../start/your-apps/index.html">Your apps</a><a href="../../../start/new-app/index.html">Add a new app</a><a href="../../../start/overview/index.html">Your app&#39;s Overview</a><a href="../../../start/find-your-way/index.html">Find your way around</a><a href="../../../start/guide/index.html">App Studio&#39;s built-in Guide</a><a href="../../../start/changes-reach-the-app/index.html">When your changes reach the app</a><a href="../../../start/goals/index.html">Start with a goal</a></div><div><p class="foot-h">Build your app</p><a href="../../index.html">Overview<span class="sr">: Build your app</span></a><a href="../../app-identity/index.html">Name, icon &amp; splash</a><a href="../../app-general/index.html">Events &amp; updates</a><a href="../index.html">Sign-in &amp; registration</a><a href="../../app-menu/index.html">Menu &amp; content</a><a href="../../old-app-builder/index.html">Your old App Builder settings</a></div><div><p class="foot-h">Look &amp; features</p><a href="../../../look/index.html">Overview<span class="sr">: Look &amp; features</span></a><a href="../../../look/design/index.html">Colours &amp; fonts</a><a href="../../../look/home/index.html">Home screen</a><a href="../../../look/pages/index.html">Custom pages</a><a href="../../../look/translations/index.html">Translations</a><a href="../../../look/play-win/index.html">Play &amp; Win</a><a href="../../../look/widgets/index.html">Home-screen widgets</a><a href="../../../look/scope/index.html">Per event, per language or for the whole app</a><a href="../../../look/home-blocks-vs-widgets/index.html">Home screen blocks and home-screen widgets</a></div><div><p class="foot-h">Release</p><a href="../../../release/index.html">Overview<span class="sr">: Release</span></a><a href="../../../release/screenshots/index.html">Store screenshots</a><a href="../../../release/builds/index.html">Build &amp; test</a><a href="../../../release/publish/index.html">Publish</a><a href="../../../release/journey/index.html">From test build to the stores</a></div><div><p class="foot-h">After launch</p><a href="../../../after/index.html">Overview<span class="sr">: After launch</span></a><a href="../../../after/analytics/index.html">Analytics</a><a href="../../../after/analytics/how-numbers-are-counted/index.html">How the numbers are counted</a><a href="../../../after/updating/index.html">Update your app after launch</a></div><div><p class="foot-h">Help</p><a href="../../../help/index.html">Overview<span class="sr">: Help</span></a><a href="../../../help/glossary/index.html">Glossary</a><a href="../../../help/messages/index.html">Messages, word for word</a><a href="../../../help/limits/index.html">Limits, sizes and formats</a><a href="../../../help/set-by-team/index.html">Set by your ExpoPlatform team</a><a href="../../../help/whats-new/index.html">What changed</a><a href="../../../help/about/index.html">About this guide</a></div></div><div class="foot-bottom"><span class="logo"><svg width="142" height="48" viewBox="0 0 142 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M63.9588 0.00012207H49.864V18.9085C49.864 24.0756 54.0527 28.2643 59.2198 28.2643H77.2219V18.4091H82.8423C86.0634 18.4091 88.1625 17.6075 90.0354 15.9939C91.9237 14.367 92.8541 11.8208 92.8541 9.20461C92.8541 6.58753 91.9232 4.08429 90.0361 2.45803C88.1635 0.816192 86.064 0.00012207 82.8423 0.00012207H71.5734V23.1219H59.8349C57.445 23.1219 55.5077 21.1845 55.5077 18.7946V16.5139H68.4243L67.0709 11.5821H55.5077V5.14251L65.324 5.14251L63.9588 0.00012207ZM86.9465 9.20461C86.9465 10.3694 86.5332 11.3985 85.7176 12.1382C84.9004 12.8794 83.656 13.3509 81.9578 13.3509H77.2219V5.05828H81.9578C83.656 5.05828 84.9004 5.52981 85.7176 6.271C86.5332 7.01073 86.9465 8.03977 86.9465 9.20461Z" fill="#03A7FF"/>
+<path d="M9.18131 45.8031V47.8142H0.796875V36.9856H8.98021V38.9966H3.28746V41.3479H8.31503V43.2971H3.28746V45.8031H9.18131Z" fill="#03A7FF"/>
+<path d="M18.7521 47.8142L16.1377 44.0551L13.5698 47.8142H10.6925L14.6991 42.307L10.8936 36.9856H13.74L16.2305 40.4971L18.6747 36.9856H21.3819L17.6073 42.2142L21.6449 47.8142H18.7521Z" fill="#03A7FF"/>
+<path d="M28.1734 36.9856C29.1325 36.9856 29.9627 37.1454 30.664 37.4651C31.3756 37.7848 31.9222 38.2386 32.3038 38.8264C32.6854 39.4143 32.8762 40.1104 32.8762 40.9148C32.8762 41.7089 32.6854 42.405 32.3038 43.0032C31.9222 43.591 31.3756 44.0448 30.664 44.3645C29.9627 44.6739 29.1325 44.8286 28.1734 44.8286H25.9923V47.8142H23.4862V36.9856H28.1734ZM28.0342 42.7866C28.7871 42.7866 29.3594 42.6268 29.7513 42.307C30.1432 41.977 30.3392 41.513 30.3392 40.9148C30.3392 40.3063 30.1432 39.8423 29.7513 39.5225C29.3594 39.1925 28.7871 39.0275 28.0342 39.0275H25.9923V42.7866H28.0342Z" fill="#03A7FF"/>
+<path d="M40.6793 47.9998C39.5552 47.9998 38.5393 47.7575 37.6318 47.2727C36.7346 46.788 36.0281 46.1228 35.5125 45.2772C35.0072 44.4212 34.7545 43.4621 34.7545 42.3999C34.7545 41.3376 35.0072 40.3837 35.5125 39.538C36.0281 38.682 36.7346 38.0117 37.6318 37.527C38.5393 37.0423 39.5552 36.7999 40.6793 36.7999C41.8034 36.7999 42.8141 37.0423 43.7113 37.527C44.6085 38.0117 45.315 38.682 45.8306 39.538C46.3463 40.3837 46.6041 41.3376 46.6041 42.3999C46.6041 43.4621 46.3463 44.4212 45.8306 45.2772C45.315 46.1228 44.6085 46.788 43.7113 47.2727C42.8141 47.7575 41.8034 47.9998 40.6793 47.9998ZM40.6793 45.865C41.3187 45.865 41.8962 45.7206 42.4119 45.4319C42.9275 45.1328 43.3297 44.7203 43.6185 44.1943C43.9176 43.6684 44.0671 43.0702 44.0671 42.3999C44.0671 41.7295 43.9176 41.1314 43.6185 40.6054C43.3297 40.0794 42.9275 39.6721 42.4119 39.3833C41.8962 39.0842 41.3187 38.9347 40.6793 38.9347C40.0399 38.9347 39.4624 39.0842 38.9467 39.3833C38.4311 39.6721 38.0237 40.0794 37.7246 40.6054C37.4359 41.1314 37.2915 41.7295 37.2915 42.3999C37.2915 43.0702 37.4359 43.6684 37.7246 44.1943C38.0237 44.7203 38.4311 45.1328 38.9467 45.4319C39.4624 45.7206 40.0399 45.865 40.6793 45.865Z" fill="#03A7FF"/>
+<path d="M53.7935 36.9856C54.7526 36.9856 55.5828 37.1454 56.2841 37.4651C56.9957 37.7848 57.5423 38.2386 57.9238 38.8264C58.3054 39.4143 58.4962 40.1104 58.4962 40.9148C58.4962 41.7089 58.3054 42.405 57.9238 43.0032C57.5423 43.591 56.9957 44.0448 56.2841 44.3645C55.5828 44.6739 54.7526 44.8286 53.7935 44.8286H51.6123V47.8142H49.1063V36.9856H53.7935ZM53.6543 42.7866C54.4071 42.7866 54.9795 42.6268 55.3714 42.307C55.7633 41.977 55.9592 41.513 55.9592 40.9148C55.9592 40.3063 55.7633 39.8423 55.3714 39.5225C54.9795 39.1925 54.4071 39.0275 53.6543 39.0275H51.6123V42.7866H53.6543Z" fill="#03A7FF"/>
+<path d="M60.9041 36.9856H63.4102V45.7722H68.84V47.8142H60.9041V36.9856Z" fill="#03A7FF"/>
+<path d="M78.5644 45.4938H73.5369L72.5778 47.8142H70.0098L74.8363 36.9856H77.3114L82.1533 47.8142H79.5235L78.5644 45.4938ZM77.7755 43.591L76.0584 39.4452L74.3413 43.591H77.7755Z" fill="#03A7FF"/>
+<path d="M85.3531 39.0275H81.888V36.9856H91.3243V39.0275H87.8592V47.8142H85.3531V39.0275Z" fill="#03A7FF"/>
+<path d="M96.0392 38.9966V41.8584H101.051V43.8695H96.0392V47.8142H93.5332V36.9856H101.717V38.9966H96.0392Z" fill="#03A7FF"/>
+<path d="M109.17 47.9998C108.046 47.9998 107.03 47.7575 106.123 47.2727C105.226 46.788 104.519 46.1228 104.003 45.2772C103.498 44.4212 103.245 43.4621 103.245 42.3999C103.245 41.3376 103.498 40.3837 104.003 39.538C104.519 38.682 105.226 38.0117 106.123 37.527C107.03 37.0423 108.046 36.7999 109.17 36.7999C110.294 36.7999 111.305 37.0423 112.202 37.527C113.099 38.0117 113.806 38.682 114.322 39.538C114.837 40.3837 115.095 41.3376 115.095 42.3999C115.095 43.4621 114.837 44.4212 114.322 45.2772C113.806 46.1228 113.099 46.788 112.202 47.2727C111.305 47.7575 110.294 47.9998 109.17 47.9998ZM109.17 45.865C109.81 45.865 110.387 45.7206 110.903 45.4319C111.418 45.1328 111.821 44.7203 112.109 44.1943C112.409 43.6684 112.558 43.0702 112.558 42.3999C112.558 41.7295 112.409 41.1314 112.109 40.6054C111.821 40.0794 111.418 39.6721 110.903 39.3833C110.387 39.0842 109.81 38.9347 109.17 38.9347C108.531 38.9347 107.953 39.0842 107.438 39.3833C106.922 39.6721 106.515 40.0794 106.216 40.6054C105.927 41.1314 105.782 41.7295 105.782 42.3999C105.782 43.0702 105.927 43.6684 106.216 44.1943C106.515 44.7203 106.922 45.1328 107.438 45.4319C107.953 45.7206 108.531 45.865 109.17 45.865Z" fill="#03A7FF"/>
+<path d="M124.497 47.8142L122.408 44.7976H120.103V47.8142H117.597V36.9856H122.284C123.244 36.9856 124.074 37.1454 124.775 37.4651C125.487 37.7848 126.033 38.2386 126.415 38.8264C126.796 39.4143 126.987 40.1104 126.987 40.9148C126.987 41.7192 126.791 42.4153 126.399 43.0032C126.018 43.5807 125.471 44.0242 124.76 44.3335L127.188 47.8142H124.497ZM124.45 40.9148C124.45 40.3063 124.254 39.8423 123.862 39.5225C123.47 39.1925 122.898 39.0275 122.145 39.0275H120.103V42.8021H122.145C122.898 42.8021 123.47 42.6371 123.862 42.307C124.254 41.977 124.45 41.513 124.45 40.9148Z" fill="#03A7FF"/>
+<path d="M139.446 47.8142L139.43 41.317L136.243 46.6694H135.114L131.943 41.4562V47.8142H129.591V36.9856H131.664L135.717 43.7148L139.708 36.9856H141.766L141.797 47.8142H139.446Z" fill="#03A7FF"/>
+</svg>
+<span class="tag">Smart Events</span></span><span>The App Studio guide, from ExpoPlatform.</span><span class="ver">Guide <b>v1.0.0</b><span class="sep"></span>App Studio version <code class="val">c599848</code><span class="sep"></span>Checked 14 Oct 2026<span class="sep"></span><a href="../../../help/whats-new/index.html">What changed</a></span></div></div></footer><div class="search-dialog" role="dialog" aria-modal="true" aria-label="Search the guide" hidden><div class="search-panel"><div class="search-input"><svg class="i " viewBox="0 0 24 24" aria-hidden="true">
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg><input type="search" role="combobox" aria-expanded="true" aria-controls="search-results" aria-autocomplete="list" placeholder="Search pages, fields, messages and words" autocomplete="off"><button class="icon-btn search-close" type="button" aria-label="Close search"><svg class="i s16" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M18 6 6 18" />
+  <path d="m6 6 12 12" />
+</svg></button></div><div class="results" id="search-results" role="listbox" aria-label="Results"></div><div class="search-foot"><span><span class="kbd">↑</span><span class="kbd">↓</span> move</span><span><span class="kbd">Enter</span> open</span><span><span class="kbd">Esc</span> close</span></div></div></div><script src="../../../assets/search-index.js" defer></script><script src="../../../assets/site.js" defer></script></body></html>
